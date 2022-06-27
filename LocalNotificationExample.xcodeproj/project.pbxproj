@@ -12,7 +12,19 @@
 		E88E8A842869B5BE001C96FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E8A832869B5BE001C96FB /* HomeViewController.swift */; };
 		E88E8A892869B5C0001C96FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88E8A882869B5C0001C96FB /* Assets.xcassets */; };
 		E88E8A8C2869B5C0001C96FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88E8A8A2869B5C0001C96FB /* LaunchScreen.storyboard */; };
+		E8FB9694286A0CAF0091072B /* LocalNotificationExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FB9693286A0CAF0091072B /* LocalNotificationExampleUITests.swift */; };
+		E8FB9696286A0CAF0091072B /* LocalNotificationExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FB9695286A0CAF0091072B /* LocalNotificationExampleUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8FB9697286A0CAF0091072B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E88E8A742869B5BE001C96FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E88E8A7B2869B5BE001C96FB;
+			remoteInfo = LocalNotificationExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E88E8A7C2869B5BE001C96FB /* LocalNotificationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotificationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,11 +33,21 @@
 		E88E8A832869B5BE001C96FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E88E8A882869B5C0001C96FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E88E8A8B2869B5C0001C96FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E88E8A8D2869B5C0001C96FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E88E8A8D2869B5C0001C96FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = LocalNotificationExample/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
+		E8FB9691286A0CAF0091072B /* LocalNotificationExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalNotificationExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8FB9693286A0CAF0091072B /* LocalNotificationExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationExampleUITests.swift; sourceTree = "<group>"; };
+		E8FB9695286A0CAF0091072B /* LocalNotificationExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E88E8A792869B5BE001C96FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8FB968E286A0CAF0091072B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				E88E8A7E2869B5BE001C96FB /* LocalNotificationExample */,
+				E8FB9692286A0CAF0091072B /* LocalNotificationExampleUITests */,
 				E88E8A7D2869B5BE001C96FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				E88E8A7C2869B5BE001C96FB /* LocalNotificationExample.app */,
+				E8FB9691286A0CAF0091072B /* LocalNotificationExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +78,47 @@
 		E88E8A7E2869B5BE001C96FB /* LocalNotificationExample */ = {
 			isa = PBXGroup;
 			children = (
-				E88E8A7F2869B5BE001C96FB /* AppDelegate.swift */,
-				E88E8A812869B5BE001C96FB /* SceneDelegate.swift */,
-				E88E8A832869B5BE001C96FB /* HomeViewController.swift */,
-				E88E8A882869B5C0001C96FB /* Assets.xcassets */,
-				E88E8A8A2869B5C0001C96FB /* LaunchScreen.storyboard */,
-				E88E8A8D2869B5C0001C96FB /* Info.plist */,
+				E88E8A95286A0528001C96FB /* Application */,
+				E88E8A94286A04E1001C96FB /* Resources */,
+				E88E8A93286A04CD001C96FB /* View */,
 			);
 			path = LocalNotificationExample;
+			sourceTree = "<group>";
+		};
+		E88E8A93286A04CD001C96FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E88E8A832869B5BE001C96FB /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E88E8A94286A04E1001C96FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E88E8A8D2869B5C0001C96FB /* Info.plist */,
+				E88E8A882869B5C0001C96FB /* Assets.xcassets */,
+				E88E8A8A2869B5C0001C96FB /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E88E8A95286A0528001C96FB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E88E8A7F2869B5BE001C96FB /* AppDelegate.swift */,
+				E88E8A812869B5BE001C96FB /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E8FB9692286A0CAF0091072B /* LocalNotificationExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8FB9693286A0CAF0091072B /* LocalNotificationExampleUITests.swift */,
+				E8FB9695286A0CAF0091072B /* LocalNotificationExampleUITestsLaunchTests.swift */,
+			);
+			path = LocalNotificationExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +141,24 @@
 			productReference = E88E8A7C2869B5BE001C96FB /* LocalNotificationExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E8FB9690286A0CAF0091072B /* LocalNotificationExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8FB9699286A0CAF0091072B /* Build configuration list for PBXNativeTarget "LocalNotificationExampleUITests" */;
+			buildPhases = (
+				E8FB968D286A0CAF0091072B /* Sources */,
+				E8FB968E286A0CAF0091072B /* Frameworks */,
+				E8FB968F286A0CAF0091072B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8FB9698286A0CAF0091072B /* PBXTargetDependency */,
+			);
+			name = LocalNotificationExampleUITests;
+			productName = LocalNotificationExampleUITests;
+			productReference = E8FB9691286A0CAF0091072B /* LocalNotificationExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +171,10 @@
 				TargetAttributes = {
 					E88E8A7B2869B5BE001C96FB = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					E8FB9690286A0CAF0091072B = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = E88E8A7B2869B5BE001C96FB;
 					};
 				};
 			};
@@ -113,6 +192,7 @@
 			projectRoot = "";
 			targets = (
 				E88E8A7B2869B5BE001C96FB /* LocalNotificationExample */,
+				E8FB9690286A0CAF0091072B /* LocalNotificationExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +204,13 @@
 			files = (
 				E88E8A8C2869B5C0001C96FB /* LaunchScreen.storyboard in Resources */,
 				E88E8A892869B5C0001C96FB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8FB968F286A0CAF0091072B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +227,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8FB968D286A0CAF0091072B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8FB9696286A0CAF0091072B /* LocalNotificationExampleUITestsLaunchTests.swift in Sources */,
+				E8FB9694286A0CAF0091072B /* LocalNotificationExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8FB9698286A0CAF0091072B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E88E8A7B2869B5BE001C96FB /* LocalNotificationExample */;
+			targetProxy = E8FB9697286A0CAF0091072B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E88E8A8A2869B5C0001C96FB /* LaunchScreen.storyboard */ = {
@@ -277,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AVC8X7323;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LocalNotificationExample/Info.plist;
+				INFOPLIST_FILE = LocalNotificationExample/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -305,7 +409,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AVC8X7323;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LocalNotificationExample/Info.plist;
+				INFOPLIST_FILE = LocalNotificationExample/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -321,6 +425,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E8FB969A286A0CAF0091072B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2AVC8X7323;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = woin2ee.LocalNotificationExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LocalNotificationExample;
+			};
+			name = Debug;
+		};
+		E8FB969B286A0CAF0091072B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2AVC8X7323;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = woin2ee.LocalNotificationExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LocalNotificationExample;
 			};
 			name = Release;
 		};
@@ -341,6 +481,15 @@
 			buildConfigurations = (
 				E88E8A912869B5C0001C96FB /* Debug */,
 				E88E8A922869B5C0001C96FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8FB9699286A0CAF0091072B /* Build configuration list for PBXNativeTarget "LocalNotificationExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8FB969A286A0CAF0091072B /* Debug */,
+				E8FB969B286A0CAF0091072B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
