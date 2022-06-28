@@ -7,6 +7,7 @@ target 'LocalNotificationExample' do
 
   # Pods for LocalNotificationExample
 	pod 'SFSafeSymbols', '>= 3.0'
+	pod 'SnapKit', '~> 5.6.0'
 
   target 'LocalNotificationExampleUITests' do
     # Pods for testing

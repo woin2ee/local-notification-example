@@ -7,121 +7,220 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17B3938AE56C955105C94B02A9E94A49 /* SFSymbol+AllSymbols+3.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF2F53120EC83C4ACFDA6ED1F5669 /* SFSymbol+AllSymbols+3.0.swift */; };
-		1FAC7DC7B9E5D02802FAB2E398D99AB3 /* SFSymbol+3.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F3F5778F799CE018560EA0CCB9968A /* SFSymbol+3.3.swift */; };
-		1FD8D5CF10571181FF51D59B8C6FB699 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2808ED32562F3B9C55783E6F21CB1F7D /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F228C1429A8CD2CF2DBFD0D0F5838695 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-dummy.m */; };
-		298C474D4D73B915E25658DC408237D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3A25B8A8E4FC2A5DD67F81FAD616B698 /* Pods-LocalNotificationExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 233ADB16B83019E6ACDAC2CC7A2A8747 /* Pods-LocalNotificationExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EB2BE8562EE2F5A0008C9A124F9CDC4 /* SFSymbol+AllSymbols+1.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7340EB6E47EA4FFC5CCD5D47FD5B6883 /* SFSymbol+AllSymbols+1.0.swift */; };
-		46E3CD6BD31D8CE3182C1686BF64C698 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934B8013359EA08E2EA9E6EE8A61E80 /* UIImageExtension.swift */; };
-		554100C256B1E92286A7A6BB57CB410E /* SFSymbol+1.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9378E621D6F727DAFE0BBF36277E7C5 /* SFSymbol+1.0.swift */; };
-		56CC33575296048F34D8A04C7DE8F9BA /* SwiftUILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0232E2A141A2077F69BE2B7A77885BB /* SwiftUILabelExtension.swift */; };
-		59104B7946880302EC3BBD903BD22316 /* SFSymbol+AllSymbols+2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A244E08D94FCE24F434409B58EB2784 /* SFSymbol+AllSymbols+2.0.swift */; };
-		5F13938FF0703CDD30588165725F2D64 /* SFSafeSymbols-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A75515615DC840D80B28059D3A2F7C42 /* SFSafeSymbols-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F68C737D9ADFA52133DB89CABE052C6 /* SFSymbol+2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EAA04D888468DB1E3C2552C6DAB16C /* SFSymbol+2.0.swift */; };
-		6DEC81F2845EFA3A7B10984C8FBA98BC /* SFSymbol+2.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F29D8D09B76C6659A178CDA47341E /* SFSymbol+2.1.swift */; };
-		6EB257B756FA08C77A32331E7C3269FE /* SFSafeSymbols-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA70C15C0C4609EAE6931722783C5D4 /* SFSafeSymbols-dummy.m */; };
-		7409EF68CE4D650B3EBF13914AA7419D /* SFSymbol+AllSymbols+3.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5525F9E2D2BC4C0244C653EA9233B /* SFSymbol+AllSymbols+3.1.swift */; };
+		00A2749F46C967ED4725A32357E3FB1B /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B5FC24BA6E8B67BB195A862A59CD /* ConstraintLayoutSupport.swift */; };
+		026E49B637BFCA404B6F7C1395F1406B /* Pods-LocalNotificationExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 233ADB16B83019E6ACDAC2CC7A2A8747 /* Pods-LocalNotificationExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04637C70546B34F93C3A1D79C3F78B37 /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AF4BDFEFFC93427842B6BB775EA76A /* ConstraintDirectionalInsetTarget.swift */; };
+		0591132B5EA1BE4DDA268D8A9C3D0421 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A2B328E474907CD6668B6227CC97D /* LayoutConstraint.swift */; };
+		06E43B4751069B47B3BD4AFD936A57E3 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2CE11981A85004433FF067B70E4DA /* ConstraintPriority.swift */; };
+		0833E66E7F19849322305D67777B77DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0B994CDC79B1AD3A7BE62490D27C60C8 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51276037C3DEA9748FC632293AB5AADE /* ConstraintAttributes.swift */; };
+		17B3938AE56C955105C94B02A9E94A49 /* SFSymbol+AllSymbols+3.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD875F79BB51F8786AC1A51E15E51618 /* SFSymbol+AllSymbols+3.0.swift */; };
+		183D8B3E057B885EA7DF9A8CDCCE9029 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4076618E03BC632C9B684E9E00EC087 /* ConstraintMakerRelatable.swift */; };
+		1FAC7DC7B9E5D02802FAB2E398D99AB3 /* SFSymbol+3.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF206FEEE564335132C5012B94861A /* SFSymbol+3.3.swift */; };
+		220D6AC9B1B1EC8EFFB204F9C1EAC842 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51E75FBB36F35D0393EE7D430FF41C /* ConstraintMakerEditable.swift */; };
+		256558233B40ACA6818F143BBC5B8017 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817392D200FBE56A464EA9BD875B027B /* ConstraintViewDSL.swift */; };
+		3660B4F629053ABC3C1DF69366770289 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86367A7F48716AD4B68D91DB8D50EC /* ConstraintConfig.swift */; };
+		38B9D58E94D9C1CECD7E381C64A2329D /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD42D2D3C498CB591289B67A64D2F2 /* UILayoutSupport+Extensions.swift */; };
+		3EB2BE8562EE2F5A0008C9A124F9CDC4 /* SFSymbol+AllSymbols+1.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27F8B040E2284DB430054A842E08E9 /* SFSymbol+AllSymbols+1.0.swift */; };
+		42B6ACFCF650183030867CB3EF345E95 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0278BA21E4A879D84665AE9A51EE27 /* ConstraintMakerFinalizable.swift */; };
+		46E3CD6BD31D8CE3182C1686BF64C698 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6F32A3E31F6977AD57D08EFBF86A /* UIImageExtension.swift */; };
+		4BAD99B7394E225CEDBF94B8100BCC7F /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB574DBB71954AC607E025481382E92D /* ConstraintRelation.swift */; };
+		4DA72FD7F1FB2C0449EDEF4B8A579807 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C14FCFE98B1D18AEDD4BC6502AA461 /* ConstraintPriorityTarget.swift */; };
+		5380454C48A12A6E376122ABD8096968 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA7369569A8DFC53E3D42CB4401BEA1 /* ConstraintDescription.swift */; };
+		554100C256B1E92286A7A6BB57CB410E /* SFSymbol+1.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2276E638A3DEB004DDE9D7002CBD5814 /* SFSymbol+1.0.swift */; };
+		55E51F45F1E157D3B4942BA7252C277E /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C14ECF2A060A0A598DEFD61614218 /* ConstraintRelatableTarget.swift */; };
+		56A72F6D13D930C4A2568F24DEA33C8D /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D2645CE39ECD856F604FD81F88D64E /* ConstraintLayoutSupportDSL.swift */; };
+		56AC6DC6459AE47E7BC4AF06E5B148D2 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28A649358B9A0EEDA01662116C348C /* ConstraintDSL.swift */; };
+		56CC33575296048F34D8A04C7DE8F9BA /* SwiftUILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2006217604B830BE35E19ADC4F136FC3 /* SwiftUILabelExtension.swift */; };
+		59104B7946880302EC3BBD903BD22316 /* SFSymbol+AllSymbols+2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCE332BEE4164CB6A48E775F9B038F /* SFSymbol+AllSymbols+2.0.swift */; };
+		5D36B99F3CAB1FC7337082D9581FECA6 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5F6FA19BEB49AF4A361DFEB1C00E9 /* Debugging.swift */; };
+		5F13938FF0703CDD30588165725F2D64 /* SFSafeSymbols-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AEFC9A9F1656420602034DA55041F91 /* SFSafeSymbols-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F68C737D9ADFA52133DB89CABE052C6 /* SFSymbol+2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73544CED3B363A76A098D30AE5ADDD65 /* SFSymbol+2.0.swift */; };
+		604D3C93C17978C23600EC415949AB64 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539C441C53125DAE9FC3BA5628D4FEC4 /* ConstraintInsets.swift */; };
+		611CEF7FF1EF9EA1BCEF6C73EEE3ACCF /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B004F90A54F5B9F1BA1CC620B85EA1C3 /* ConstraintLayoutGuide.swift */; };
+		69DE75BA185BBAB5FDAA28321F3C849F /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226758985B26B80B994159F51C48D10 /* ConstraintItem.swift */; };
+		6A50D5BB93795FC276516F0A9200A62A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6AC1B881BB319C89AD023A02CDC8FC3D /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17DF7AB61ADDD64E9F01F96B37C7171 /* ConstraintLayoutGuide+Extensions.swift */; };
+		6DEC81F2845EFA3A7B10984C8FBA98BC /* SFSymbol+2.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BA2B1B0B33FF2A8614D21813CCC3A9 /* SFSymbol+2.1.swift */; };
+		6EAC8B6FA2D115DE708A58C601DD25E1 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE1A9EFED19757802A0CF45BC31BC1 /* Constraint.swift */; };
+		6EB257B756FA08C77A32331E7C3269FE /* SFSafeSymbols-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D34233712F625AE64CC6C6764AE09D16 /* SFSafeSymbols-dummy.m */; };
+		7409EF68CE4D650B3EBF13914AA7419D /* SFSymbol+AllSymbols+3.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DC508824D3100E005DCFDCF3874F7 /* SFSymbol+AllSymbols+3.1.swift */; };
 		76B6C0AB5B1C553D07F9640C109C64A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		77036F896B70B09F32E0C55491FF3873 /* SFSymbol+AllSymbols+3.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753F09FFB69A695B635EE29D1B4CD554 /* SFSymbol+AllSymbols+3.2.swift */; };
-		77AA424D6D238584808E2FF8333738C7 /* SymbolLocalizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CCF94DFFD2C0F8D2A88EE66B38771 /* SymbolLocalizations.swift */; };
-		780AE74FDA2A8813299916A9520AAECC /* SFSymbol+AllSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E46FA24937D6F514CBD482E65466678 /* SFSymbol+AllSymbols.swift */; };
-		8517B7F7212B597F80A71617A6FAB6FB /* SFSymbol+2.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FDE2D826A3819F91DAEFDFABF187F5 /* SFSymbol+2.2.swift */; };
-		8FFEACF203811664B2FDA2FE0C0AE6F5 /* SFSymbol+3.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC686045D818B02DC435E8D3E14C9EF /* SFSymbol+3.2.swift */; };
-		A114D23A6598CE68B1F6C079BC6EB3CD /* SFSymbol+3.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438B60F54AC741ED62D7CEE7BE19201 /* SFSymbol+3.1.swift */; };
-		B4B16DD0AF7E8A321E50EBC78EED320C /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AD15FD43167518342CB978CEBA6F05 /* UIButtonExtension.swift */; };
-		BE4BCEF8FF546E7025EFFC754977A948 /* NSImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A2825432E7C301D39DF91DD920929 /* NSImageExtension.swift */; };
-		CA5B8C830BE49E84A5DB22046251145C /* SwiftUIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52D2DECFB10CF32D0A8B1A3A49344D6 /* SwiftUIImageExtension.swift */; };
-		CB2C693347E87D62E832D73D1C0A379E /* SFSymbol+3.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10A3721A5997002A99828C1870EC86 /* SFSymbol+3.0.swift */; };
-		CBA645264874E3C83E145FF55888170D /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D72C9922933E2EB9E82DA1CD76BB71A4 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDF5FBEC313E3FE79EF39234534D7498 /* SFSymbol+AllSymbols+2.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD28FF63B9E194525706209F4A73722 /* SFSymbol+AllSymbols+2.1.swift */; };
-		D28252022C797C79D4156D054D4B32DF /* SFSymbol+AllSymbols+1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F634CB1DA6AB08FD09CED28D291062A /* SFSymbol+AllSymbols+1.1.swift */; };
-		D2A9DE0C3A55FF00BBF3AEF031367879 /* SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DE63962599D14660D6066746206AC /* SFSymbol.swift */; };
-		D60614D98D7F7D2B1125870B1EA7B168 /* UIApplicationShortcutIconExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A45D8250CEE6F72CB8666C6E8FE01C /* UIApplicationShortcutIconExtension.swift */; };
-		E8087E2C6A8C9D1CFE5E753F04F0EF0B /* SFSymbol+AllSymbols+2.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675FA03E7347CE62C1E6D8245833946A /* SFSymbol+AllSymbols+2.2.swift */; };
-		E833AAB76D7B758328C50FDE038A364F /* SymbolWithLocalizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2604BC49D03D14933FC54A122554767 /* SymbolWithLocalizations.swift */; };
-		EACD00F2543F566CAD3D087BD52269B6 /* Pods-LocalNotificationExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2333E30225871BF7CE3E65D1858D7D22 /* Pods-LocalNotificationExample-dummy.m */; };
-		EFA667F9E4CD9886C132CCDDB014E5E0 /* SFSymbol+AllSymbols+3.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D919DABBC3F38D16082A573CA941DC3 /* SFSymbol+AllSymbols+3.3.swift */; };
-		FBD934C09A0AC21F278703455047D71E /* SFSymbol+1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB010E428A0B7EFAC5CE9BB3B1E0B3B /* SFSymbol+1.1.swift */; };
+		77036F896B70B09F32E0C55491FF3873 /* SFSymbol+AllSymbols+3.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D748F00051DD10CB095BD127D8F5DF /* SFSymbol+AllSymbols+3.2.swift */; };
+		77AA424D6D238584808E2FF8333738C7 /* SymbolLocalizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82024B4ABC44D1FD7D03C8AFEE5627E0 /* SymbolLocalizations.swift */; };
+		780AE74FDA2A8813299916A9520AAECC /* SFSymbol+AllSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C919416998A0934DF1FD003D8EDC7B /* SFSymbol+AllSymbols.swift */; };
+		8517B7F7212B597F80A71617A6FAB6FB /* SFSymbol+2.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9924717DDC950807DFDD9D21FAC656DB /* SFSymbol+2.2.swift */; };
+		8CD48ABBF0DBEA05FDCD2D9581008A9C /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D72C9922933E2EB9E82DA1CD76BB71A4 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FFEACF203811664B2FDA2FE0C0AE6F5 /* SFSymbol+3.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4918DD873983A078131D3D0EB30AC4 /* SFSymbol+3.2.swift */; };
+		95E194A3AABB5407231E898B6686F73E /* ConstraintMakerRelatable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A350566632F237A2AC8ACB2ABB84D661 /* ConstraintMakerRelatable+Extensions.swift */; };
+		98F570DA48370453D648BD526FDAAEAA /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D20B64161AE3EEDF17734885BB6BAF5 /* LayoutConstraintItem.swift */; };
+		9C9548E8B4675954566202F7B87FF0E6 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06B956DDCB670353163BB3F542CA42 /* ConstraintConstantTarget.swift */; };
+		9E02CFFEFE1BEC978B512286F03D31DA /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591646E0DAC573E634CD3F499AB2E56C /* ConstraintInsetTarget.swift */; };
+		A03FDA8BC5741880B1EF11AFD248EF48 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FC3884D24196EC1ED443CDE457039 /* ConstraintOffsetTarget.swift */; };
+		A114D23A6598CE68B1F6C079BC6EB3CD /* SFSymbol+3.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0101DCE4678EB693BE61A430FB728BC /* SFSymbol+3.1.swift */; };
+		A3E3AB7C765C21AE17B1E6EE6560040C /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8CE16AEA25580EC7A34478A914F1F64 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5A8BF973BFE9C9304372A26C9F2E35B /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B179EA49728393FA2E2B2D8C6ED1E16 /* ConstraintMakerExtendable.swift */; };
+		B03B5579590D528CBA6D11FF638BC2AF /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F249D0119ADF638A21F79D6730DD04F /* Typealiases.swift */; };
+		B43017FEC99D227D4CDD81DD2C27D9D9 /* ConstraintMakerPrioritizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2412242F973948C077C048B5D0D4E /* ConstraintMakerPrioritizable.swift */; };
+		B4B16DD0AF7E8A321E50EBC78EED320C /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337FAAA2426CE93113EF398271ADEC2 /* UIButtonExtension.swift */; };
+		B752F7C4BECB65894B1F49421049CE5F /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690F0B65EBA24557303C6B4729EAFF7C /* ConstraintView.swift */; };
+		BA3454C82AB9E709380A367B8C52509C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BD47CB74CD9B2B4D2D942C9B65748DFB /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 021FD197A1DB03801B979C3902C6032F /* SnapKit-dummy.m */; };
+		BE4BCEF8FF546E7025EFFC754977A948 /* NSImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4CCCC4AD96D285714EC1914C0402D1 /* NSImageExtension.swift */; };
+		C835FFBFC27B23B8A25876626C5BA7F2 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F228C1429A8CD2CF2DBFD0D0F5838695 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-dummy.m */; };
+		CA5B8C830BE49E84A5DB22046251145C /* SwiftUIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CC14648D1C895FC0301931E08FADB /* SwiftUIImageExtension.swift */; };
+		CB2C693347E87D62E832D73D1C0A379E /* SFSymbol+3.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8260DE59DDE4D2E7B09FE3EB49B9E19 /* SFSymbol+3.0.swift */; };
+		CDF5FBEC313E3FE79EF39234534D7498 /* SFSymbol+AllSymbols+2.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414E11CDDD21010C1CCCEAFA45BD61D /* SFSymbol+AllSymbols+2.1.swift */; };
+		D28252022C797C79D4156D054D4B32DF /* SFSymbol+AllSymbols+1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA8B843224D5D94AD253472CC21B5B /* SFSymbol+AllSymbols+1.1.swift */; };
+		D2A9DE0C3A55FF00BBF3AEF031367879 /* SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E5118766889A32401CFFD5D8D14259 /* SFSymbol.swift */; };
+		D60614D98D7F7D2B1125870B1EA7B168 /* UIApplicationShortcutIconExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D6B77330C37C11D89CEF487B1AA6C1 /* UIApplicationShortcutIconExtension.swift */; };
+		DF6C0529E762AE771C6F14311B1C676E /* Pods-LocalNotificationExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2333E30225871BF7CE3E65D1858D7D22 /* Pods-LocalNotificationExample-dummy.m */; };
+		E8087E2C6A8C9D1CFE5E753F04F0EF0B /* SFSymbol+AllSymbols+2.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2FEFB15DE64400E78A738E7EBD1A1C /* SFSymbol+AllSymbols+2.2.swift */; };
+		E833AAB76D7B758328C50FDE038A364F /* SymbolWithLocalizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C46398D83833BD0A4964DFBB61633D /* SymbolWithLocalizations.swift */; };
+		E98DC8FB2578E76A812E0C94BA10E1B1 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0AEB9765DE3A49E1A5265145735A9 /* ConstraintDirectionalInsets.swift */; };
+		EF21586EC3DFF6097A58EEC87376A0C1 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905BEE658C0279B878E13AF1A9E8E20F /* ConstraintLayoutGuideDSL.swift */; };
+		EFA667F9E4CD9886C132CCDDB014E5E0 /* SFSymbol+AllSymbols+3.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51877BB4EB65BE80F6A29CF58833C0D3 /* SFSymbol+AllSymbols+3.3.swift */; };
+		F7C0960CEEB8F0C18F4503B405EAC08F /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55678E8025EE2C58A787A0BA7141F2 /* ConstraintMultiplierTarget.swift */; };
+		F953AA9104BFE0C2DAD639EA60104A75 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D969A57B571B96CCA4E39B9FF445A7 /* ConstraintView+Extensions.swift */; };
+		FAB03959C2357E325B19E08BC4775DAB /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05215A25EC4B9CA3E3D4A52140EE6C2E /* ConstraintMaker.swift */; };
+		FBD934C09A0AC21F278703455047D71E /* SFSymbol+1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550748D2B7C58209C6CDFDBA650237AC /* SFSymbol+1.1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0C3391A8FAD7EA3AAEFCAA3FF8FCCFAA /* PBXContainerItemProxy */ = {
+		55224C5480E79E705048DDC9E48AA031 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1282B8776A6EFDCCBE1858E8F673D0A4;
 			remoteInfo = SFSafeSymbols;
 		};
-		7798BFBE0165133F4EAE37573DA9C3F9 /* PBXContainerItemProxy */ = {
+		751C2F56B6C568BAB3BDF229EDF70166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		DC19F44726E2D690CB54D3969C134AD2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1282B8776A6EFDCCBE1858E8F673D0A4;
 			remoteInfo = SFSafeSymbols;
+		};
+		FA4055540E9DC3F066816857685368F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00FDE2D826A3819F91DAEFDFABF187F5 /* SFSymbol+2.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+2.2.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+2.2.swift"; sourceTree = "<group>"; };
-		0A244E08D94FCE24F434409B58EB2784 /* SFSymbol+AllSymbols+2.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+2.0.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+2.0.swift"; sourceTree = "<group>"; };
-		0CA70C15C0C4609EAE6931722783C5D4 /* SFSafeSymbols-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFSafeSymbols-dummy.m"; sourceTree = "<group>"; };
-		0F634CB1DA6AB08FD09CED28D291062A /* SFSymbol+AllSymbols+1.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+1.1.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+1.1.swift"; sourceTree = "<group>"; };
-		120A2825432E7C301D39DF91DD920929 /* NSImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSImageExtension.swift; path = Sources/SFSafeSymbols/Initializers/AppKit/NSImageExtension.swift; sourceTree = "<group>"; };
+		021FD197A1DB03801B979C3902C6032F /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		0414E11CDDD21010C1CCCEAFA45BD61D /* SFSymbol+AllSymbols+2.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+2.1.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+2.1.swift"; sourceTree = "<group>"; };
+		05215A25EC4B9CA3E3D4A52140EE6C2E /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Sources/ConstraintMaker.swift; sourceTree = "<group>"; };
+		0F249D0119ADF638A21F79D6730DD04F /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Sources/Typealiases.swift; sourceTree = "<group>"; };
 		16FE0893CD246BEE47DCF8842BBF8B63 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationExample-LocalNotificationExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		1749C675A0F16B7728F15629F6D21AC0 /* SFSafeSymbols.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFSafeSymbols.release.xcconfig; sourceTree = "<group>"; };
+		18C919416998A0934DF1FD003D8EDC7B /* SFSymbol+AllSymbols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols.swift"; sourceTree = "<group>"; };
 		1D4C9BB24E9FC4CF2BDE840D52F7E109 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationExample-LocalNotificationExampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1E0CEF9C54D9539D3DA7D21F3F1A37E5 /* SFSafeSymbols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFSafeSymbols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2006217604B830BE35E19ADC4F136FC3 /* SwiftUILabelExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUILabelExtension.swift; path = Sources/SFSafeSymbols/Initializers/SwiftUI/SwiftUILabelExtension.swift; sourceTree = "<group>"; };
+		205BEC01FD63895E09CFC6530CEDD7FA /* SFSafeSymbols.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFSafeSymbols.debug.xcconfig; sourceTree = "<group>"; };
+		20D6B77330C37C11D89CEF487B1AA6C1 /* UIApplicationShortcutIconExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIApplicationShortcutIconExtension.swift; path = Sources/SFSafeSymbols/Initializers/UIKit/UIApplicationShortcutIconExtension.swift; sourceTree = "<group>"; };
+		2226758985B26B80B994159F51C48D10 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Sources/ConstraintItem.swift; sourceTree = "<group>"; };
+		2276E638A3DEB004DDE9D7002CBD5814 /* SFSymbol+1.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+1.0.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+1.0.swift"; sourceTree = "<group>"; };
 		2333E30225871BF7CE3E65D1858D7D22 /* Pods-LocalNotificationExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocalNotificationExample-dummy.m"; sourceTree = "<group>"; };
 		233ADB16B83019E6ACDAC2CC7A2A8747 /* Pods-LocalNotificationExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocalNotificationExample-umbrella.h"; sourceTree = "<group>"; };
+		28AD42D2D3C498CB591289B67A64D2F2 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Sources/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		2A4A365D64DF8B7D4813D4B33D55002E /* Pods-LocalNotificationExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationExample-Info.plist"; sourceTree = "<group>"; };
-		30C5525F9E2D2BC4C0244C653EA9233B /* SFSymbol+AllSymbols+3.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+3.1.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+3.1.swift"; sourceTree = "<group>"; };
-		36FBF2F53120EC83C4ACFDA6ED1F5669 /* SFSymbol+AllSymbols+3.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+3.0.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+3.0.swift"; sourceTree = "<group>"; };
+		2AAB5FBCD6EE2F25C560F8F259C7F409 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		2C55678E8025EE2C58A787A0BA7141F2 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Sources/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		37BA2B1B0B33FF2A8614D21813CCC3A9 /* SFSymbol+2.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+2.1.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+2.1.swift"; sourceTree = "<group>"; };
+		384CB8BFB1955C6F9B6233A3C9462D97 /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
+		3A7A2B328E474907CD6668B6227CC97D /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Sources/LayoutConstraint.swift; sourceTree = "<group>"; };
+		3FC52F3306447D062D58E47CCD835BA0 /* SFSafeSymbols.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFSafeSymbols.release.xcconfig; sourceTree = "<group>"; };
 		415302AB8306A3E008B1F17F70B9D42B /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocalNotificationExample-LocalNotificationExampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		48A5FA9D904B19D4F54081132605764B /* SFSafeSymbols-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SFSafeSymbols-Info.plist"; sourceTree = "<group>"; };
-		48AD15FD43167518342CB978CEBA6F05 /* UIButtonExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIButtonExtension.swift; path = Sources/SFSafeSymbols/Initializers/UIKit/UIButtonExtension.swift; sourceTree = "<group>"; };
-		48EAA04D888468DB1E3C2552C6DAB16C /* SFSymbol+2.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+2.0.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+2.0.swift"; sourceTree = "<group>"; };
+		4AEFC9A9F1656420602034DA55041F91 /* SFSafeSymbols-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFSafeSymbols-umbrella.h"; sourceTree = "<group>"; };
+		4DB4A251DB62C473D0DE670410A567D4 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		4ECF206FEEE564335132C5012B94861A /* SFSymbol+3.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+3.3.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+3.3.swift"; sourceTree = "<group>"; };
+		51276037C3DEA9748FC632293AB5AADE /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Sources/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		51877BB4EB65BE80F6A29CF58833C0D3 /* SFSymbol+AllSymbols+3.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+3.3.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+3.3.swift"; sourceTree = "<group>"; };
+		539C441C53125DAE9FC3BA5628D4FEC4 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Sources/ConstraintInsets.swift; sourceTree = "<group>"; };
+		550748D2B7C58209C6CDFDBA650237AC /* SFSymbol+1.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+1.1.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+1.1.swift"; sourceTree = "<group>"; };
+		591646E0DAC573E634CD3F499AB2E56C /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Sources/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		5A0C14ECF2A060A0A598DEFD61614218 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Sources/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		5AEDAAFB2017FFB9B53F5C10AD6FF91C /* Pods-LocalNotificationExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		5B86367A7F48716AD4B68D91DB8D50EC /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Sources/ConstraintConfig.swift; sourceTree = "<group>"; };
+		5F76B5FC24BA6E8B67BB195A862A59CD /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Sources/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		5F9E02B82DF10A7BC5135B79F20959FE /* SFSafeSymbols.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SFSafeSymbols.modulemap; sourceTree = "<group>"; };
 		614652C9ACD06DE778109B83B501DAA6 /* Pods-LocalNotificationExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalNotificationExample-frameworks.sh"; sourceTree = "<group>"; };
-		668DE63962599D14660D6066746206AC /* SFSymbol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SFSymbol.swift; path = Sources/SFSafeSymbols/Symbols/SFSymbol.swift; sourceTree = "<group>"; };
-		675FA03E7347CE62C1E6D8245833946A /* SFSymbol+AllSymbols+2.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+2.2.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+2.2.swift"; sourceTree = "<group>"; };
-		6E46FA24937D6F514CBD482E65466678 /* SFSymbol+AllSymbols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols.swift"; sourceTree = "<group>"; };
+		64D2645CE39ECD856F604FD81F88D64E /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Sources/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		690F0B65EBA24557303C6B4729EAFF7C /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Sources/ConstraintView.swift; sourceTree = "<group>"; };
+		6D20B64161AE3EEDF17734885BB6BAF5 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Sources/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		6E0278BA21E4A879D84665AE9A51EE27 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Sources/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		72AF4BDFEFFC93427842B6BB775EA76A /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Sources/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7340EB6E47EA4FFC5CCD5D47FD5B6883 /* SFSymbol+AllSymbols+1.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+1.0.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+1.0.swift"; sourceTree = "<group>"; };
-		753F09FFB69A695B635EE29D1B4CD554 /* SFSymbol+AllSymbols+3.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+3.2.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+3.2.swift"; sourceTree = "<group>"; };
+		73544CED3B363A76A098D30AE5ADDD65 /* SFSymbol+2.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+2.0.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+2.0.swift"; sourceTree = "<group>"; };
 		7846C3EDF21B084FCF28C1E0F7CD57B1 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalNotificationExample-LocalNotificationExampleUITests-frameworks.sh"; sourceTree = "<group>"; };
-		7914E4A35DF9F3560D72241A8EC04E57 /* SFSafeSymbols.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFSafeSymbols.debug.xcconfig; sourceTree = "<group>"; };
-		7930267768F8B857293FB415E945B9A6 /* SFSafeSymbols.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SFSafeSymbols.modulemap; sourceTree = "<group>"; };
 		7AB45387B4DA9ACB54C68AD06FB2BC71 /* Pods-LocalNotificationExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationExample.debug.xcconfig"; sourceTree = "<group>"; };
-		7D919DABBC3F38D16082A573CA941DC3 /* SFSymbol+AllSymbols+3.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+3.3.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+3.3.swift"; sourceTree = "<group>"; };
-		8AD28FF63B9E194525706209F4A73722 /* SFSymbol+AllSymbols+2.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+2.1.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+2.1.swift"; sourceTree = "<group>"; };
+		7B179EA49728393FA2E2B2D8C6ED1E16 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Sources/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		817392D200FBE56A464EA9BD875B027B /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Sources/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		82024B4ABC44D1FD7D03C8AFEE5627E0 /* SymbolLocalizations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SymbolLocalizations.swift; path = Sources/SFSafeSymbols/Symbols/SymbolLocalizations.swift; sourceTree = "<group>"; };
+		84E0AEB9765DE3A49E1A5265145735A9 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Sources/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
+		87A5F6FA19BEB49AF4A361DFEB1C00E9 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Sources/Debugging.swift; sourceTree = "<group>"; };
+		8CC2CE11981A85004433FF067B70E4DA /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Sources/ConstraintPriority.swift; sourceTree = "<group>"; };
+		8DCE1A9EFED19757802A0CF45BC31BC1 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Sources/Constraint.swift; sourceTree = "<group>"; };
+		8E2FEFB15DE64400E78A738E7EBD1A1C /* SFSymbol+AllSymbols+2.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+2.2.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+2.2.swift"; sourceTree = "<group>"; };
+		8F27F8B040E2284DB430054A842E08E9 /* SFSymbol+AllSymbols+1.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+1.0.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+1.0.swift"; sourceTree = "<group>"; };
+		905BEE658C0279B878E13AF1A9E8E20F /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Sources/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		92D969A57B571B96CCA4E39B9FF445A7 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Sources/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
 		950B9D20DA584F4E33912505211B79DA /* Pods-LocalNotificationExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocalNotificationExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F14C253191BFE682070CF4E7FD46DB /* SFSafeSymbols-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFSafeSymbols-prefix.pch"; sourceTree = "<group>"; };
+		9924717DDC950807DFDD9D21FAC656DB /* SFSymbol+2.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+2.2.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+2.2.swift"; sourceTree = "<group>"; };
+		9A4E6F32A3E31F6977AD57D08EFBF86A /* UIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = Sources/SFSafeSymbols/Initializers/UIKit/UIImageExtension.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F6F29D8D09B76C6659A178CDA47341E /* SFSymbol+2.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+2.1.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+2.1.swift"; sourceTree = "<group>"; };
-		A75515615DC840D80B28059D3A2F7C42 /* SFSafeSymbols-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFSafeSymbols-umbrella.h"; sourceTree = "<group>"; };
-		A934B8013359EA08E2EA9E6EE8A61E80 /* UIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = Sources/SFSafeSymbols/Initializers/UIKit/UIImageExtension.swift; sourceTree = "<group>"; };
+		9E66CC6BCF3949705DDBDE4BDB92A348 /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		A350566632F237A2AC8ACB2ABB84D661 /* ConstraintMakerRelatable+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintMakerRelatable+Extensions.swift"; path = "Sources/ConstraintMakerRelatable+Extensions.swift"; sourceTree = "<group>"; };
+		A8CE16AEA25580EC7A34478A914F1F64 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		AAA7369569A8DFC53E3D42CB4401BEA1 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Sources/ConstraintDescription.swift; sourceTree = "<group>"; };
 		ADCFB1467DAFB14E31C52C2B0F620F31 /* Pods-LocalNotificationExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationExample.release.xcconfig"; sourceTree = "<group>"; };
 		AF39009900AC5C8C56DFEA9C79DC8A53 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LocalNotificationExample-LocalNotificationExampleUITests"; path = Pods_LocalNotificationExample_LocalNotificationExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0232E2A141A2077F69BE2B7A77885BB /* SwiftUILabelExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUILabelExtension.swift; path = Sources/SFSafeSymbols/Initializers/SwiftUI/SwiftUILabelExtension.swift; sourceTree = "<group>"; };
-		B3A45D8250CEE6F72CB8666C6E8FE01C /* UIApplicationShortcutIconExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIApplicationShortcutIconExtension.swift; path = Sources/SFSafeSymbols/Initializers/UIKit/UIApplicationShortcutIconExtension.swift; sourceTree = "<group>"; };
-		B52D2DECFB10CF32D0A8B1A3A49344D6 /* SwiftUIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUIImageExtension.swift; path = Sources/SFSafeSymbols/Initializers/SwiftUI/SwiftUIImageExtension.swift; sourceTree = "<group>"; };
+		AF8CC14648D1C895FC0301931E08FADB /* SwiftUIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUIImageExtension.swift; path = Sources/SFSafeSymbols/Initializers/SwiftUI/SwiftUIImageExtension.swift; sourceTree = "<group>"; };
+		B004F90A54F5B9F1BA1CC620B85EA1C3 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Sources/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		B4C46398D83833BD0A4964DFBB61633D /* SymbolWithLocalizations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SymbolWithLocalizations.swift; path = Sources/SFSafeSymbols/Symbols/SymbolWithLocalizations.swift; sourceTree = "<group>"; };
+		B5C2412242F973948C077C048B5D0D4E /* ConstraintMakerPrioritizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPrioritizable.swift; path = Sources/ConstraintMakerPrioritizable.swift; sourceTree = "<group>"; };
 		B910755CC3627BC4D3C9FF9D5403DEB3 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationExample-LocalNotificationExampleUITests-Info.plist"; sourceTree = "<group>"; };
 		BA906EB46D1429FAA6EB901A84430511 /* Pods-LocalNotificationExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocalNotificationExample.modulemap"; sourceTree = "<group>"; };
-		BDB010E428A0B7EFAC5CE9BB3B1E0B3B /* SFSymbol+1.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+1.1.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+1.1.swift"; sourceTree = "<group>"; };
-		C9378E621D6F727DAFE0BBF36277E7C5 /* SFSymbol+1.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+1.0.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+1.0.swift"; sourceTree = "<group>"; };
-		D2080D71CDD001929B2151CC169D2903 /* SFSafeSymbols-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFSafeSymbols-prefix.pch"; sourceTree = "<group>"; };
+		BB51E75FBB36F35D0393EE7D430FF41C /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Sources/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		BD4918DD873983A078131D3D0EB30AC4 /* SFSymbol+3.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+3.2.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+3.2.swift"; sourceTree = "<group>"; };
+		C0101DCE4678EB693BE61A430FB728BC /* SFSymbol+3.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+3.1.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+3.1.swift"; sourceTree = "<group>"; };
+		C17DF7AB61ADDD64E9F01F96B37C7171 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Sources/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		C2D748F00051DD10CB095BD127D8F5DF /* SFSymbol+AllSymbols+3.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+3.2.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+3.2.swift"; sourceTree = "<group>"; };
+		C337FAAA2426CE93113EF398271ADEC2 /* UIButtonExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIButtonExtension.swift; path = Sources/SFSafeSymbols/Initializers/UIKit/UIButtonExtension.swift; sourceTree = "<group>"; };
+		C4076618E03BC632C9B684E9E00EC087 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Sources/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		C598CC4263F84B42A9D11BE3BF8DD77E /* SFSafeSymbols-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SFSafeSymbols-Info.plist"; sourceTree = "<group>"; };
+		C7BCE332BEE4164CB6A48E775F9B038F /* SFSymbol+AllSymbols+2.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+2.0.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+2.0.swift"; sourceTree = "<group>"; };
+		C8260DE59DDE4D2E7B09FE3EB49B9E19 /* SFSymbol+3.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+3.0.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+3.0.swift"; sourceTree = "<group>"; };
+		CA7FC3884D24196EC1ED443CDE457039 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Sources/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		CD875F79BB51F8786AC1A51E15E51618 /* SFSymbol+AllSymbols+3.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+3.0.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+3.0.swift"; sourceTree = "<group>"; };
+		D34233712F625AE64CC6C6764AE09D16 /* SFSafeSymbols-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFSafeSymbols-dummy.m"; sourceTree = "<group>"; };
 		D58CFE37CFED6C2D53433BECCA5B4F18 /* Pods-LocalNotificationExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LocalNotificationExample"; path = Pods_LocalNotificationExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F5B7E7D9FDB0246AA398B965BECBD5 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		D68FF7B7D8276BBE765D8D3AAAAEC7E2 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationExample-LocalNotificationExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D72C9922933E2EB9E82DA1CD76BB71A4 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocalNotificationExample-LocalNotificationExampleUITests-umbrella.h"; sourceTree = "<group>"; };
-		D83CCF94DFFD2C0F8D2A88EE66B38771 /* SymbolLocalizations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SymbolLocalizations.swift; path = Sources/SFSafeSymbols/Symbols/SymbolLocalizations.swift; sourceTree = "<group>"; };
-		E0F3F5778F799CE018560EA0CCB9968A /* SFSymbol+3.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+3.3.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+3.3.swift"; sourceTree = "<group>"; };
+		DB574DBB71954AC607E025481382E92D /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Sources/ConstraintRelation.swift; sourceTree = "<group>"; };
+		DF4CCCC4AD96D285714EC1914C0402D1 /* NSImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSImageExtension.swift; path = Sources/SFSafeSymbols/Initializers/AppKit/NSImageExtension.swift; sourceTree = "<group>"; };
+		E8C14FCFE98B1D18AEDD4BC6502AA461 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Sources/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		EAFA8B843224D5D94AD253472CC21B5B /* SFSymbol+AllSymbols+1.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+1.1.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+1.1.swift"; sourceTree = "<group>"; };
+		EE06B956DDCB670353163BB3F542CA42 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Sources/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		EF28A649358B9A0EEDA01662116C348C /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Sources/ConstraintDSL.swift; sourceTree = "<group>"; };
 		F228C1429A8CD2CF2DBFD0D0F5838695 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocalNotificationExample-LocalNotificationExampleUITests-dummy.m"; sourceTree = "<group>"; };
-		F2604BC49D03D14933FC54A122554767 /* SymbolWithLocalizations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SymbolWithLocalizations.swift; path = Sources/SFSafeSymbols/Symbols/SymbolWithLocalizations.swift; sourceTree = "<group>"; };
-		F438B60F54AC741ED62D7CEE7BE19201 /* SFSymbol+3.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+3.1.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+3.1.swift"; sourceTree = "<group>"; };
 		F5B2A22FD7C9C8CCBF79E8BE660B6E51 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocalNotificationExample-LocalNotificationExampleUITests.modulemap"; sourceTree = "<group>"; };
-		FD10A3721A5997002A99828C1870EC86 /* SFSymbol+3.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+3.0.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+3.0.swift"; sourceTree = "<group>"; };
-		FDC686045D818B02DC435E8D3E14C9EF /* SFSymbol+3.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+3.2.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+3.2.swift"; sourceTree = "<group>"; };
+		F8E5118766889A32401CFFD5D8D14259 /* SFSymbol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SFSymbol.swift; path = Sources/SFSafeSymbols/Symbols/SFSymbol.swift; sourceTree = "<group>"; };
+		FB8DC508824D3100E005DCFDCF3874F7 /* SFSymbol+AllSymbols+3.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+3.1.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+3.1.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,56 +232,125 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D623BB24B101F64C01FAEB505DD3108 /* Frameworks */ = {
+		839A1DFD81BC93B9CA218D7D1823EC6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FD8D5CF10571181FF51D59B8C6FB699 /* Foundation.framework in Frameworks */,
+				6A50D5BB93795FC276516F0A9200A62A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		847C8B89EFC070259BC3626DFC382AF2 /* Frameworks */ = {
+		DCC6CEFD3FC0F22CC977EFB9327ED8D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				298C474D4D73B915E25658DC408237D9 /* Foundation.framework in Frameworks */,
+				BA3454C82AB9E709380A367B8C52509C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4E7CE8309D3EF7B7476AC57986BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0833E66E7F19849322305D67777B77DB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00B2AABD6E417E9E12B956563F54ECF5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F9E02B82DF10A7BC5135B79F20959FE /* SFSafeSymbols.modulemap */,
+				D34233712F625AE64CC6C6764AE09D16 /* SFSafeSymbols-dummy.m */,
+				C598CC4263F84B42A9D11BE3BF8DD77E /* SFSafeSymbols-Info.plist */,
+				98F14C253191BFE682070CF4E7FD46DB /* SFSafeSymbols-prefix.pch */,
+				4AEFC9A9F1656420602034DA55041F91 /* SFSafeSymbols-umbrella.h */,
+				205BEC01FD63895E09CFC6530CEDD7FA /* SFSafeSymbols.debug.xcconfig */,
+				3FC52F3306447D062D58E47CCD835BA0 /* SFSafeSymbols.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SFSafeSymbols";
+			sourceTree = "<group>";
+		};
+		02D82C3AC31D8B4525D66CF4E912EC5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D58CFE37CFED6C2D53433BECCA5B4F18 /* Pods-LocalNotificationExample */,
+				AF39009900AC5C8C56DFEA9C79DC8A53 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests */,
+				1E0CEF9C54D9539D3DA7D21F3F1A37E5 /* SFSafeSymbols.framework */,
+				979486118B3E90C08386079D57962701 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04ACCD7A5FC13A91FDF2E4D111B79D06 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DB4A251DB62C473D0DE670410A567D4 /* SnapKit.modulemap */,
+				021FD197A1DB03801B979C3902C6032F /* SnapKit-dummy.m */,
+				2AAB5FBCD6EE2F25C560F8F259C7F409 /* SnapKit-Info.plist */,
+				D5F5B7E7D9FDB0246AA398B965BECBD5 /* SnapKit-prefix.pch */,
+				A8CE16AEA25580EC7A34478A914F1F64 /* SnapKit-umbrella.h */,
+				9E66CC6BCF3949705DDBDE4BDB92A348 /* SnapKit.debug.xcconfig */,
+				384CB8BFB1955C6F9B6233A3C9462D97 /* SnapKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		23AA5CBB3FFD87062CF5E51EC125A297 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				8DCE1A9EFED19757802A0CF45BC31BC1 /* Constraint.swift */,
+				51276037C3DEA9748FC632293AB5AADE /* ConstraintAttributes.swift */,
+				5B86367A7F48716AD4B68D91DB8D50EC /* ConstraintConfig.swift */,
+				EE06B956DDCB670353163BB3F542CA42 /* ConstraintConstantTarget.swift */,
+				AAA7369569A8DFC53E3D42CB4401BEA1 /* ConstraintDescription.swift */,
+				84E0AEB9765DE3A49E1A5265145735A9 /* ConstraintDirectionalInsets.swift */,
+				72AF4BDFEFFC93427842B6BB775EA76A /* ConstraintDirectionalInsetTarget.swift */,
+				EF28A649358B9A0EEDA01662116C348C /* ConstraintDSL.swift */,
+				539C441C53125DAE9FC3BA5628D4FEC4 /* ConstraintInsets.swift */,
+				591646E0DAC573E634CD3F499AB2E56C /* ConstraintInsetTarget.swift */,
+				2226758985B26B80B994159F51C48D10 /* ConstraintItem.swift */,
+				B004F90A54F5B9F1BA1CC620B85EA1C3 /* ConstraintLayoutGuide.swift */,
+				C17DF7AB61ADDD64E9F01F96B37C7171 /* ConstraintLayoutGuide+Extensions.swift */,
+				905BEE658C0279B878E13AF1A9E8E20F /* ConstraintLayoutGuideDSL.swift */,
+				5F76B5FC24BA6E8B67BB195A862A59CD /* ConstraintLayoutSupport.swift */,
+				64D2645CE39ECD856F604FD81F88D64E /* ConstraintLayoutSupportDSL.swift */,
+				05215A25EC4B9CA3E3D4A52140EE6C2E /* ConstraintMaker.swift */,
+				BB51E75FBB36F35D0393EE7D430FF41C /* ConstraintMakerEditable.swift */,
+				7B179EA49728393FA2E2B2D8C6ED1E16 /* ConstraintMakerExtendable.swift */,
+				6E0278BA21E4A879D84665AE9A51EE27 /* ConstraintMakerFinalizable.swift */,
+				B5C2412242F973948C077C048B5D0D4E /* ConstraintMakerPrioritizable.swift */,
+				C4076618E03BC632C9B684E9E00EC087 /* ConstraintMakerRelatable.swift */,
+				A350566632F237A2AC8ACB2ABB84D661 /* ConstraintMakerRelatable+Extensions.swift */,
+				2C55678E8025EE2C58A787A0BA7141F2 /* ConstraintMultiplierTarget.swift */,
+				CA7FC3884D24196EC1ED443CDE457039 /* ConstraintOffsetTarget.swift */,
+				8CC2CE11981A85004433FF067B70E4DA /* ConstraintPriority.swift */,
+				E8C14FCFE98B1D18AEDD4BC6502AA461 /* ConstraintPriorityTarget.swift */,
+				5A0C14ECF2A060A0A598DEFD61614218 /* ConstraintRelatableTarget.swift */,
+				DB574DBB71954AC607E025481382E92D /* ConstraintRelation.swift */,
+				690F0B65EBA24557303C6B4729EAFF7C /* ConstraintView.swift */,
+				92D969A57B571B96CCA4E39B9FF445A7 /* ConstraintView+Extensions.swift */,
+				817392D200FBE56A464EA9BD875B027B /* ConstraintViewDSL.swift */,
+				87A5F6FA19BEB49AF4A361DFEB1C00E9 /* Debugging.swift */,
+				3A7A2B328E474907CD6668B6227CC97D /* LayoutConstraint.swift */,
+				6D20B64161AE3EEDF17734885BB6BAF5 /* LayoutConstraintItem.swift */,
+				0F249D0119ADF638A21F79D6730DD04F /* Typealiases.swift */,
+				28AD42D2D3C498CB591289B67A64D2F2 /* UILayoutSupport+Extensions.swift */,
+				04ACCD7A5FC13A91FDF2E4D111B79D06 /* Support Files */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		5B2FF05C9ED203897C068B9639F8ECB7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7930267768F8B857293FB415E945B9A6 /* SFSafeSymbols.modulemap */,
-				0CA70C15C0C4609EAE6931722783C5D4 /* SFSafeSymbols-dummy.m */,
-				48A5FA9D904B19D4F54081132605764B /* SFSafeSymbols-Info.plist */,
-				D2080D71CDD001929B2151CC169D2903 /* SFSafeSymbols-prefix.pch */,
-				A75515615DC840D80B28059D3A2F7C42 /* SFSafeSymbols-umbrella.h */,
-				7914E4A35DF9F3560D72241A8EC04E57 /* SFSafeSymbols.debug.xcconfig */,
-				1749C675A0F16B7728F15629F6D21AC0 /* SFSafeSymbols.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SFSafeSymbols";
-			sourceTree = "<group>";
-		};
-		6C640FDC6B5A9F2875837572302344A4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D58CFE37CFED6C2D53433BECCA5B4F18 /* Pods-LocalNotificationExample */,
-				AF39009900AC5C8C56DFEA9C79DC8A53 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests */,
-				1E0CEF9C54D9539D3DA7D21F3F1A37E5 /* SFSafeSymbols.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		717C46CDD5C098F33A8C3F1B59529028 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests */ = {
@@ -202,6 +370,15 @@
 			path = "Target Support Files/Pods-LocalNotificationExample-LocalNotificationExampleUITests";
 			sourceTree = "<group>";
 		};
+		9672132053ED6A0D3EE6B62E1B8E77C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3FD2C6A3F85C9C16063359540B6D9F1 /* SFSafeSymbols */,
+				23AA5CBB3FFD87062CF5E51EC125A297 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B29A963960AEDA3AA1F6E6CA369892E6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,46 +393,10 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				D4F09B562FDF2049FD7EC07D8889EEE4 /* Pods */,
-				6C640FDC6B5A9F2875837572302344A4 /* Products */,
+				9672132053ED6A0D3EE6B62E1B8E77C5 /* Pods */,
+				02D82C3AC31D8B4525D66CF4E912EC5A /* Products */,
 				B29A963960AEDA3AA1F6E6CA369892E6 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D0EF21A237D9032F2E5FF4DF41918084 /* SFSafeSymbols */ = {
-			isa = PBXGroup;
-			children = (
-				120A2825432E7C301D39DF91DD920929 /* NSImageExtension.swift */,
-				668DE63962599D14660D6066746206AC /* SFSymbol.swift */,
-				C9378E621D6F727DAFE0BBF36277E7C5 /* SFSymbol+1.0.swift */,
-				BDB010E428A0B7EFAC5CE9BB3B1E0B3B /* SFSymbol+1.1.swift */,
-				48EAA04D888468DB1E3C2552C6DAB16C /* SFSymbol+2.0.swift */,
-				9F6F29D8D09B76C6659A178CDA47341E /* SFSymbol+2.1.swift */,
-				00FDE2D826A3819F91DAEFDFABF187F5 /* SFSymbol+2.2.swift */,
-				FD10A3721A5997002A99828C1870EC86 /* SFSymbol+3.0.swift */,
-				F438B60F54AC741ED62D7CEE7BE19201 /* SFSymbol+3.1.swift */,
-				FDC686045D818B02DC435E8D3E14C9EF /* SFSymbol+3.2.swift */,
-				E0F3F5778F799CE018560EA0CCB9968A /* SFSymbol+3.3.swift */,
-				6E46FA24937D6F514CBD482E65466678 /* SFSymbol+AllSymbols.swift */,
-				7340EB6E47EA4FFC5CCD5D47FD5B6883 /* SFSymbol+AllSymbols+1.0.swift */,
-				0F634CB1DA6AB08FD09CED28D291062A /* SFSymbol+AllSymbols+1.1.swift */,
-				0A244E08D94FCE24F434409B58EB2784 /* SFSymbol+AllSymbols+2.0.swift */,
-				8AD28FF63B9E194525706209F4A73722 /* SFSymbol+AllSymbols+2.1.swift */,
-				675FA03E7347CE62C1E6D8245833946A /* SFSymbol+AllSymbols+2.2.swift */,
-				36FBF2F53120EC83C4ACFDA6ED1F5669 /* SFSymbol+AllSymbols+3.0.swift */,
-				30C5525F9E2D2BC4C0244C653EA9233B /* SFSymbol+AllSymbols+3.1.swift */,
-				753F09FFB69A695B635EE29D1B4CD554 /* SFSymbol+AllSymbols+3.2.swift */,
-				7D919DABBC3F38D16082A573CA941DC3 /* SFSymbol+AllSymbols+3.3.swift */,
-				B52D2DECFB10CF32D0A8B1A3A49344D6 /* SwiftUIImageExtension.swift */,
-				B0232E2A141A2077F69BE2B7A77885BB /* SwiftUILabelExtension.swift */,
-				D83CCF94DFFD2C0F8D2A88EE66B38771 /* SymbolLocalizations.swift */,
-				F2604BC49D03D14933FC54A122554767 /* SymbolWithLocalizations.swift */,
-				B3A45D8250CEE6F72CB8666C6E8FE01C /* UIApplicationShortcutIconExtension.swift */,
-				48AD15FD43167518342CB978CEBA6F05 /* UIButtonExtension.swift */,
-				A934B8013359EA08E2EA9E6EE8A61E80 /* UIImageExtension.swift */,
-				5B2FF05C9ED203897C068B9639F8ECB7 /* Support Files */,
-			);
-			path = SFSafeSymbols;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -264,14 +405,6 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D4F09B562FDF2049FD7EC07D8889EEE4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D0EF21A237D9032F2E5FF4DF41918084 /* SFSafeSymbols */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		DD06C54F9E86C265B3CC0FDE8D9D6F08 /* Pods-LocalNotificationExample */ = {
@@ -291,14 +424,66 @@
 			path = "Target Support Files/Pods-LocalNotificationExample";
 			sourceTree = "<group>";
 		};
+		E3FD2C6A3F85C9C16063359540B6D9F1 /* SFSafeSymbols */ = {
+			isa = PBXGroup;
+			children = (
+				DF4CCCC4AD96D285714EC1914C0402D1 /* NSImageExtension.swift */,
+				F8E5118766889A32401CFFD5D8D14259 /* SFSymbol.swift */,
+				2276E638A3DEB004DDE9D7002CBD5814 /* SFSymbol+1.0.swift */,
+				550748D2B7C58209C6CDFDBA650237AC /* SFSymbol+1.1.swift */,
+				73544CED3B363A76A098D30AE5ADDD65 /* SFSymbol+2.0.swift */,
+				37BA2B1B0B33FF2A8614D21813CCC3A9 /* SFSymbol+2.1.swift */,
+				9924717DDC950807DFDD9D21FAC656DB /* SFSymbol+2.2.swift */,
+				C8260DE59DDE4D2E7B09FE3EB49B9E19 /* SFSymbol+3.0.swift */,
+				C0101DCE4678EB693BE61A430FB728BC /* SFSymbol+3.1.swift */,
+				BD4918DD873983A078131D3D0EB30AC4 /* SFSymbol+3.2.swift */,
+				4ECF206FEEE564335132C5012B94861A /* SFSymbol+3.3.swift */,
+				18C919416998A0934DF1FD003D8EDC7B /* SFSymbol+AllSymbols.swift */,
+				8F27F8B040E2284DB430054A842E08E9 /* SFSymbol+AllSymbols+1.0.swift */,
+				EAFA8B843224D5D94AD253472CC21B5B /* SFSymbol+AllSymbols+1.1.swift */,
+				C7BCE332BEE4164CB6A48E775F9B038F /* SFSymbol+AllSymbols+2.0.swift */,
+				0414E11CDDD21010C1CCCEAFA45BD61D /* SFSymbol+AllSymbols+2.1.swift */,
+				8E2FEFB15DE64400E78A738E7EBD1A1C /* SFSymbol+AllSymbols+2.2.swift */,
+				CD875F79BB51F8786AC1A51E15E51618 /* SFSymbol+AllSymbols+3.0.swift */,
+				FB8DC508824D3100E005DCFDCF3874F7 /* SFSymbol+AllSymbols+3.1.swift */,
+				C2D748F00051DD10CB095BD127D8F5DF /* SFSymbol+AllSymbols+3.2.swift */,
+				51877BB4EB65BE80F6A29CF58833C0D3 /* SFSymbol+AllSymbols+3.3.swift */,
+				AF8CC14648D1C895FC0301931E08FADB /* SwiftUIImageExtension.swift */,
+				2006217604B830BE35E19ADC4F136FC3 /* SwiftUILabelExtension.swift */,
+				82024B4ABC44D1FD7D03C8AFEE5627E0 /* SymbolLocalizations.swift */,
+				B4C46398D83833BD0A4964DFBB61633D /* SymbolWithLocalizations.swift */,
+				20D6B77330C37C11D89CEF487B1AA6C1 /* UIApplicationShortcutIconExtension.swift */,
+				C337FAAA2426CE93113EF398271ADEC2 /* UIButtonExtension.swift */,
+				9A4E6F32A3E31F6977AD57D08EFBF86A /* UIImageExtension.swift */,
+				00B2AABD6E417E9E12B956563F54ECF5 /* Support Files */,
+			);
+			path = SFSafeSymbols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		70371496EA4674777BD34FBF384CC689 /* Headers */ = {
+		03CE7AC7FA98AF0E7BAAF54E94C9552F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A25B8A8E4FC2A5DD67F81FAD616B698 /* Pods-LocalNotificationExample-umbrella.h in Headers */,
+				026E49B637BFCA404B6F7C1395F1406B /* Pods-LocalNotificationExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27080AD02F07CC93C968C97C568E9A5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD48ABBF0DBEA05FDCD2D9581008A9C /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA4790A32ECD84F2CEA55509107BD0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E3AB7C765C21AE17B1E6EE6560040C /* SnapKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,14 +492,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F13938FF0703CDD30588165725F2D64 /* SFSafeSymbols-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E921A59AB15A72E718AD53A2D2A23D6E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CBA645264874E3C83E145FF55888170D /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,19 +516,38 @@
 			productReference = 1E0CEF9C54D9539D3DA7D21F3F1A37E5 /* SFSafeSymbols.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1C15E4681CE8307A793D45FCF0F98327 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests */ = {
+		19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC455116336DF08CA304E8C0212F584F /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationExample-LocalNotificationExampleUITests" */;
+			buildConfigurationList = 58EAA7FF29EA237538F747F2AF468203 /* Build configuration list for PBXNativeTarget "SnapKit" */;
 			buildPhases = (
-				E921A59AB15A72E718AD53A2D2A23D6E /* Headers */,
-				DA5E30733417A14F57C1E92C8A18D0B0 /* Sources */,
-				847C8B89EFC070259BC3626DFC382AF2 /* Frameworks */,
-				2448987D50BD6FA01B6E197C457537CC /* Resources */,
+				5FA4790A32ECD84F2CEA55509107BD0A /* Headers */,
+				7B7E69B2799BABEB7764F85296B591B7 /* Sources */,
+				E8E4E7CE8309D3EF7B7476AC57986BE9 /* Frameworks */,
+				820C67429A90336F5AF1C850DF03B1B9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				48AEF7A32E65C2D7267DE9E39FF0D752 /* PBXTargetDependency */,
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1C15E4681CE8307A793D45FCF0F98327 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72CFCB7CBB3C59F51AF9AB6866FBAD9 /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationExample-LocalNotificationExampleUITests" */;
+			buildPhases = (
+				27080AD02F07CC93C968C97C568E9A5D /* Headers */,
+				96795EF2EAE2C160947FAF138220FCAD /* Sources */,
+				DCC6CEFD3FC0F22CC977EFB9327ED8D4 /* Frameworks */,
+				DE58138902AB525429D1C85C4FAA032A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D14FDAD8014B34872BD990F31C6F1FD /* PBXTargetDependency */,
+				15D7AC36A02B575330217F2AED6A948D /* PBXTargetDependency */,
 			);
 			name = "Pods-LocalNotificationExample-LocalNotificationExampleUITests";
 			productName = Pods_LocalNotificationExample_LocalNotificationExampleUITests;
@@ -360,17 +556,18 @@
 		};
 		BFA01CC6CEFBDC63E13F19C4576B142D /* Pods-LocalNotificationExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0892030E8D97A96A4E43A3D4B1A5F887 /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationExample" */;
+			buildConfigurationList = 64CAA9FE2DC130E7632F34D18CF2F898 /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationExample" */;
 			buildPhases = (
-				70371496EA4674777BD34FBF384CC689 /* Headers */,
-				6082F11991723D9E4A0F153071E6F994 /* Sources */,
-				2D623BB24B101F64C01FAEB505DD3108 /* Frameworks */,
-				0C2D0C68CD1232E4ABFE0B48F9AF994C /* Resources */,
+				03CE7AC7FA98AF0E7BAAF54E94C9552F /* Headers */,
+				E285F3CCE2E5C7965537123DA84A6AF1 /* Sources */,
+				839A1DFD81BC93B9CA218D7D1823EC6B /* Frameworks */,
+				D53C7E183F848FB2619841984860938B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				26787828864AF94AADDEEED900BEE61B /* PBXTargetDependency */,
+				2EF628FB401F9140EA0CC57C5C2492CB /* PBXTargetDependency */,
+				9B6105559D00272956694B625BC5BA0A /* PBXTargetDependency */,
 			);
 			name = "Pods-LocalNotificationExample";
 			productName = Pods_LocalNotificationExample;
@@ -395,26 +592,27 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 6C640FDC6B5A9F2875837572302344A4 /* Products */;
+			productRefGroup = 02D82C3AC31D8B4525D66CF4E912EC5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BFA01CC6CEFBDC63E13F19C4576B142D /* Pods-LocalNotificationExample */,
 				1C15E4681CE8307A793D45FCF0F98327 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests */,
 				1282B8776A6EFDCCBE1858E8F673D0A4 /* SFSafeSymbols */,
+				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0C2D0C68CD1232E4ABFE0B48F9AF994C /* Resources */ = {
+		820C67429A90336F5AF1C850DF03B1B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2448987D50BD6FA01B6E197C457537CC /* Resources */ = {
+		D53C7E183F848FB2619841984860938B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -422,6 +620,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D7F324EFB860E98C7343EF6689973280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE58138902AB525429D1C85C4FAA032A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -467,41 +672,98 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6082F11991723D9E4A0F153071E6F994 /* Sources */ = {
+		7B7E69B2799BABEB7764F85296B591B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EACD00F2543F566CAD3D087BD52269B6 /* Pods-LocalNotificationExample-dummy.m in Sources */,
+				6EAC8B6FA2D115DE708A58C601DD25E1 /* Constraint.swift in Sources */,
+				0B994CDC79B1AD3A7BE62490D27C60C8 /* ConstraintAttributes.swift in Sources */,
+				3660B4F629053ABC3C1DF69366770289 /* ConstraintConfig.swift in Sources */,
+				9C9548E8B4675954566202F7B87FF0E6 /* ConstraintConstantTarget.swift in Sources */,
+				5380454C48A12A6E376122ABD8096968 /* ConstraintDescription.swift in Sources */,
+				E98DC8FB2578E76A812E0C94BA10E1B1 /* ConstraintDirectionalInsets.swift in Sources */,
+				04637C70546B34F93C3A1D79C3F78B37 /* ConstraintDirectionalInsetTarget.swift in Sources */,
+				56AC6DC6459AE47E7BC4AF06E5B148D2 /* ConstraintDSL.swift in Sources */,
+				604D3C93C17978C23600EC415949AB64 /* ConstraintInsets.swift in Sources */,
+				9E02CFFEFE1BEC978B512286F03D31DA /* ConstraintInsetTarget.swift in Sources */,
+				69DE75BA185BBAB5FDAA28321F3C849F /* ConstraintItem.swift in Sources */,
+				611CEF7FF1EF9EA1BCEF6C73EEE3ACCF /* ConstraintLayoutGuide.swift in Sources */,
+				6AC1B881BB319C89AD023A02CDC8FC3D /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				EF21586EC3DFF6097A58EEC87376A0C1 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				00A2749F46C967ED4725A32357E3FB1B /* ConstraintLayoutSupport.swift in Sources */,
+				56A72F6D13D930C4A2568F24DEA33C8D /* ConstraintLayoutSupportDSL.swift in Sources */,
+				FAB03959C2357E325B19E08BC4775DAB /* ConstraintMaker.swift in Sources */,
+				220D6AC9B1B1EC8EFFB204F9C1EAC842 /* ConstraintMakerEditable.swift in Sources */,
+				A5A8BF973BFE9C9304372A26C9F2E35B /* ConstraintMakerExtendable.swift in Sources */,
+				42B6ACFCF650183030867CB3EF345E95 /* ConstraintMakerFinalizable.swift in Sources */,
+				B43017FEC99D227D4CDD81DD2C27D9D9 /* ConstraintMakerPrioritizable.swift in Sources */,
+				183D8B3E057B885EA7DF9A8CDCCE9029 /* ConstraintMakerRelatable.swift in Sources */,
+				95E194A3AABB5407231E898B6686F73E /* ConstraintMakerRelatable+Extensions.swift in Sources */,
+				F7C0960CEEB8F0C18F4503B405EAC08F /* ConstraintMultiplierTarget.swift in Sources */,
+				A03FDA8BC5741880B1EF11AFD248EF48 /* ConstraintOffsetTarget.swift in Sources */,
+				06E43B4751069B47B3BD4AFD936A57E3 /* ConstraintPriority.swift in Sources */,
+				4DA72FD7F1FB2C0449EDEF4B8A579807 /* ConstraintPriorityTarget.swift in Sources */,
+				55E51F45F1E157D3B4942BA7252C277E /* ConstraintRelatableTarget.swift in Sources */,
+				4BAD99B7394E225CEDBF94B8100BCC7F /* ConstraintRelation.swift in Sources */,
+				B752F7C4BECB65894B1F49421049CE5F /* ConstraintView.swift in Sources */,
+				F953AA9104BFE0C2DAD639EA60104A75 /* ConstraintView+Extensions.swift in Sources */,
+				256558233B40ACA6818F143BBC5B8017 /* ConstraintViewDSL.swift in Sources */,
+				5D36B99F3CAB1FC7337082D9581FECA6 /* Debugging.swift in Sources */,
+				0591132B5EA1BE4DDA268D8A9C3D0421 /* LayoutConstraint.swift in Sources */,
+				98F570DA48370453D648BD526FDAAEAA /* LayoutConstraintItem.swift in Sources */,
+				BD47CB74CD9B2B4D2D942C9B65748DFB /* SnapKit-dummy.m in Sources */,
+				B03B5579590D528CBA6D11FF638BC2AF /* Typealiases.swift in Sources */,
+				38B9D58E94D9C1CECD7E381C64A2329D /* UILayoutSupport+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA5E30733417A14F57C1E92C8A18D0B0 /* Sources */ = {
+		96795EF2EAE2C160947FAF138220FCAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2808ED32562F3B9C55783E6F21CB1F7D /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-dummy.m in Sources */,
+				C835FFBFC27B23B8A25876626C5BA7F2 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E285F3CCE2E5C7965537123DA84A6AF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6C0529E762AE771C6F14311B1C676E /* Pods-LocalNotificationExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		26787828864AF94AADDEEED900BEE61B /* PBXTargetDependency */ = {
+		15D7AC36A02B575330217F2AED6A948D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SFSafeSymbols;
-			target = 1282B8776A6EFDCCBE1858E8F673D0A4 /* SFSafeSymbols */;
-			targetProxy = 0C3391A8FAD7EA3AAEFCAA3FF8FCCFAA /* PBXContainerItemProxy */;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 751C2F56B6C568BAB3BDF229EDF70166 /* PBXContainerItemProxy */;
 		};
-		48AEF7A32E65C2D7267DE9E39FF0D752 /* PBXTargetDependency */ = {
+		2EF628FB401F9140EA0CC57C5C2492CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SFSafeSymbols;
 			target = 1282B8776A6EFDCCBE1858E8F673D0A4 /* SFSafeSymbols */;
-			targetProxy = 7798BFBE0165133F4EAE37573DA9C3F9 /* PBXContainerItemProxy */;
+			targetProxy = DC19F44726E2D690CB54D3969C134AD2 /* PBXContainerItemProxy */;
+		};
+		6D14FDAD8014B34872BD990F31C6F1FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SFSafeSymbols;
+			target = 1282B8776A6EFDCCBE1858E8F673D0A4 /* SFSafeSymbols */;
+			targetProxy = 55224C5480E79E705048DDC9E48AA031 /* PBXContainerItemProxy */;
+		};
+		9B6105559D00272956694B625BC5BA0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = FA4055540E9DC3F066816857685368F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06856B45DB9077A7AD89A750704163E8 /* Release */ = {
+		3F74965F05C1AA6A0054A62C2913E167 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ADCFB1467DAFB14E31C52C2B0F620F31 /* Pods-LocalNotificationExample.release.xcconfig */;
 			buildSettings = {
@@ -539,7 +801,7 @@
 			};
 			name = Release;
 		};
-		17FF5DB7D81100EA46D17B1C9EAE1F71 /* Debug */ = {
+		4AC038311526606ECA6B12479D4250B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16FE0893CD246BEE47DCF8842BBF8B63 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests.debug.xcconfig */;
 			buildSettings = {
@@ -576,10 +838,11 @@
 			};
 			name = Debug;
 		};
-		77E6D19B95B551E68BE1655DF41FF0F1 /* Debug */ = {
+		7266F4F4FB36B1637D03DEABE299B451 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7914E4A35DF9F3560D72241A8EC04E57 /* SFSafeSymbols.debug.xcconfig */;
+			baseConfigurationReference = 7AB45387B4DA9ACB54C68AD06FB2BC71 /* Pods-LocalNotificationExample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -589,8 +852,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SFSafeSymbols/SFSafeSymbols-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SFSafeSymbols/SFSafeSymbols-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocalNotificationExample/Pods-LocalNotificationExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -598,20 +860,22 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SFSafeSymbols/SFSafeSymbols.modulemap";
-				PRODUCT_MODULE_NAME = SFSafeSymbols;
-				PRODUCT_NAME = SFSafeSymbols;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LocalNotificationExample/Pods-LocalNotificationExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		8A66BEA23A0A4EE8386CBF9D65E2BE10 /* Release */ = {
+		7365D674D9E29AACCB2EE63FFF377FD7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D68FF7B7D8276BBE765D8D3AAAAEC7E2 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests.release.xcconfig */;
 			buildSettings = {
@@ -642,6 +906,77 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		77E6D19B95B551E68BE1655DF41FF0F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 205BEC01FD63895E09CFC6530CEDD7FA /* SFSafeSymbols.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SFSafeSymbols/SFSafeSymbols-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SFSafeSymbols/SFSafeSymbols-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SFSafeSymbols/SFSafeSymbols.modulemap";
+				PRODUCT_MODULE_NAME = SFSafeSymbols;
+				PRODUCT_NAME = SFSafeSymbols;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C925430B65BE03F92ABCD1B2005EE0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 384CB8BFB1955C6F9B6233A3C9462D97 /* SnapKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -777,9 +1112,44 @@
 			};
 			name = Release;
 		};
+		A6F0173BAEB974532D93E05E5A94E50A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E66CC6BCF3949705DDBDE4BDB92A348 /* SnapKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D9ED31A41D3184CD0718A82472AF3899 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1749C675A0F16B7728F15629F6D21AC0 /* SFSafeSymbols.release.xcconfig */;
+			baseConfigurationReference = 3FC52F3306447D062D58E47CCD835BA0 /* SFSafeSymbols.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -793,7 +1163,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SFSafeSymbols/SFSafeSymbols-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SFSafeSymbols/SFSafeSymbols-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -813,60 +1183,32 @@
 			};
 			name = Release;
 		};
-		E43655175EB5090CE30CA18ABC8A3FB6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AB45387B4DA9ACB54C68AD06FB2BC71 /* Pods-LocalNotificationExample.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LocalNotificationExample/Pods-LocalNotificationExample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LocalNotificationExample/Pods-LocalNotificationExample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0892030E8D97A96A4E43A3D4B1A5F887 /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E43655175EB5090CE30CA18ABC8A3FB6 /* Debug */,
-				06856B45DB9077A7AD89A750704163E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
 				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58EAA7FF29EA237538F747F2AF468203 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6F0173BAEB974532D93E05E5A94E50A /* Debug */,
+				8C925430B65BE03F92ABCD1B2005EE0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64CAA9FE2DC130E7632F34D18CF2F898 /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7266F4F4FB36B1637D03DEABE299B451 /* Debug */,
+				3F74965F05C1AA6A0054A62C2913E167 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -880,11 +1222,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC455116336DF08CA304E8C0212F584F /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationExample-LocalNotificationExampleUITests" */ = {
+		A72CFCB7CBB3C59F51AF9AB6866FBAD9 /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationExample-LocalNotificationExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17FF5DB7D81100EA46D17B1C9EAE1F71 /* Debug */,
-				8A66BEA23A0A4EE8386CBF9D65E2BE10 /* Release */,
+				4AC038311526606ECA6B12479D4250B2 /* Debug */,
+				7365D674D9E29AACCB2EE63FFF377FD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
