@@ -11,7 +11,11 @@ class HomeViewController: UIViewController {
     
     private let notificationCenter: UNUserNotificationCenter
     
-    // MARK: - Init
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    // MARK: - Initializers
     
     init(notificationCenter: UNUserNotificationCenter) {
         self.notificationCenter = notificationCenter
@@ -33,8 +37,23 @@ class HomeViewController: UIViewController {
     // MARK: - Private
     
     private func initView() {
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .black
+        initNavigationBar()
         addButton()
+    }
+    
+    private func initNavigationBar() {
+        addBarButton()
+    }
+    
+    private func addBarButton() {
+        let addBarButton = UIBarButtonItem(
+            systemItem: .add,
+            primaryAction: UIAction { _ in
+                print("Add")
+            }
+        )
+        self.navigationItem.setRightBarButton(addBarButton, animated: true)
     }
     
     private func addButton() {
