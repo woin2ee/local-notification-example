@@ -45,15 +45,9 @@ class HomeViewController: UIViewController {
     }
     
     private func setupBarButton() {
-        self.navigationItem.setRightBarButton(
-            AddBarButtonItem.to { _ in
-                self.present(
-                    UINavigationController(rootViewController: AddNotificationViewController()),
-                    animated: true
-                )
-            },
-            animated: true
-        )
+        self.navigationItem.rightBarButtonItem = AddBarButtonItem.to { _ in
+            self.present(UINavigationController(rootViewController: AddNotificationViewController()), animated: true)
+        }
     }
     
 //    private func addButton() {

@@ -12,6 +12,9 @@
 		E85348C8286AF8E500D61695 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85348C7286AF8E500D61695 /* AppNavigationController.swift */; };
 		E85348CA286AFFFA00D61695 /* AddNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85348C9286AFFFA00D61695 /* AddNotificationViewController.swift */; };
 		E85348D2286B08E200D61695 /* AddBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85348D1286B08E200D61695 /* AddBarButtonItem.swift */; };
+		E85348D4286B105700D61695 /* NavigationBarTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85348D3286B105700D61695 /* NavigationBarTitleLabel.swift */; };
+		E85348D8286B116C00D61695 /* SaveBarButtonItem copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85348D7286B116C00D61695 /* SaveBarButtonItem copy.swift */; };
+		E85348DA286B117C00D61695 /* CancelBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85348D9286B117C00D61695 /* CancelBarButtonItem.swift */; };
 		E88E8A802869B5BE001C96FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E8A7F2869B5BE001C96FB /* AppDelegate.swift */; };
 		E88E8A822869B5BE001C96FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E8A812869B5BE001C96FB /* SceneDelegate.swift */; };
 		E88E8A842869B5BE001C96FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E8A832869B5BE001C96FB /* HomeViewController.swift */; };
@@ -41,6 +44,9 @@
 		E85348C7286AF8E500D61695 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		E85348C9286AFFFA00D61695 /* AddNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotificationViewController.swift; sourceTree = "<group>"; };
 		E85348D1286B08E200D61695 /* AddBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBarButtonItem.swift; sourceTree = "<group>"; };
+		E85348D3286B105700D61695 /* NavigationBarTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarTitleLabel.swift; sourceTree = "<group>"; };
+		E85348D7286B116C00D61695 /* SaveBarButtonItem copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SaveBarButtonItem copy.swift"; sourceTree = "<group>"; };
+		E85348D9286B117C00D61695 /* CancelBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBarButtonItem.swift; sourceTree = "<group>"; };
 		E88E8A7C2869B5BE001C96FB /* LocalNotificationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotificationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88E8A7F2869B5BE001C96FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E88E8A812869B5BE001C96FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +136,9 @@
 		E85348D0286B081C00D61695 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				E85348D3286B105700D61695 /* NavigationBarTitleLabel.swift */,
+				E85348D7286B116C00D61695 /* SaveBarButtonItem copy.swift */,
+				E85348D9286B117C00D61695 /* CancelBarButtonItem.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -388,9 +397,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E88E8A842869B5BE001C96FB /* HomeViewController.swift in Sources */,
+				E85348DA286B117C00D61695 /* CancelBarButtonItem.swift in Sources */,
+				E85348D8286B116C00D61695 /* SaveBarButtonItem copy.swift in Sources */,
 				E85348CA286AFFFA00D61695 /* AddNotificationViewController.swift in Sources */,
 				E85348D2286B08E200D61695 /* AddBarButtonItem.swift in Sources */,
 				E85348C8286AF8E500D61695 /* AppNavigationController.swift in Sources */,
+				E85348D4286B105700D61695 /* NavigationBarTitleLabel.swift in Sources */,
 				E88E8A802869B5BE001C96FB /* AppDelegate.swift in Sources */,
 				E88E8A822869B5BE001C96FB /* SceneDelegate.swift in Sources */,
 			);

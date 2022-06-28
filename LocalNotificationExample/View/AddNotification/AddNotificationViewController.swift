@@ -30,8 +30,6 @@ class AddNotificationViewController: UIViewController {
         self.view.backgroundColor = .init(red: 0.1, green: 0.1, blue: 0.1, alpha: 1.0)
         initNavigationBar()
         
-        
-        
         let datePicker: UIDatePicker = {
             let datePicker = UIDatePicker()
             
@@ -45,35 +43,16 @@ class AddNotificationViewController: UIViewController {
     }
     
     private func setupTitle() {
-        let titleLabel: UILabel = {
-            let title = UILabel()
-            title.text = "알림 추가"
-            title.textColor = .white
-            title.font = .boldSystemFont(ofSize: 16)
-            return title
-        }()
-        self.navigationController?.navigationBar.topItem?.titleView = titleLabel
+        self.navigationController?.navigationBar.topItem?.titleView = NavigationBarTitleLabel.to()
     }
     
     private func setupBarButton() {
-        let saveBarButton: UIBarButtonItem = {
-            let button = UIBarButtonItem(systemItem: .save)
-            button.primaryAction = UIAction { _ in
-                print("Save")
-            }
-            button.tintColor = .orange
-            return button
-        }()
-        self.navigationItem.rightBarButtonItem = saveBarButton
+        self.navigationItem.rightBarButtonItem = SaveBarButtonItem.to { _ in
+            print("Save")
+        }
         
-        let cancelBarButton: UIBarButtonItem = {
-            let button = UIBarButtonItem(systemItem: .cancel)
-            button.primaryAction = UIAction { _ in
-                self.dismiss(animated: true)
-            }
-            button.tintColor = .orange
-            return button
-        }()
-        self.navigationItem.leftBarButtonItem = cancelBarButton
+        self.navigationItem.leftBarButtonItem = CancelBarButtonItem.to { _ in
+            self.dismiss(animated: true)
+        }
     }
 }
