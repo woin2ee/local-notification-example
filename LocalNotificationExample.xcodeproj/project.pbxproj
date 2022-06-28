@@ -15,6 +15,7 @@
 		E85348D4286B105700D61695 /* NavigationBarTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85348D3286B105700D61695 /* NavigationBarTitleLabel.swift */; };
 		E85348D8286B116C00D61695 /* SaveBarButtonItem copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85348D7286B116C00D61695 /* SaveBarButtonItem copy.swift */; };
 		E85348DA286B117C00D61695 /* CancelBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85348D9286B117C00D61695 /* CancelBarButtonItem.swift */; };
+		E85348DC286B383000D61695 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85348DB286B383000D61695 /* DatePicker.swift */; };
 		E88E8A802869B5BE001C96FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E8A7F2869B5BE001C96FB /* AppDelegate.swift */; };
 		E88E8A822869B5BE001C96FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E8A812869B5BE001C96FB /* SceneDelegate.swift */; };
 		E88E8A842869B5BE001C96FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E8A832869B5BE001C96FB /* HomeViewController.swift */; };
@@ -47,6 +48,7 @@
 		E85348D3286B105700D61695 /* NavigationBarTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarTitleLabel.swift; sourceTree = "<group>"; };
 		E85348D7286B116C00D61695 /* SaveBarButtonItem copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SaveBarButtonItem copy.swift"; sourceTree = "<group>"; };
 		E85348D9286B117C00D61695 /* CancelBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBarButtonItem.swift; sourceTree = "<group>"; };
+		E85348DB286B383000D61695 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		E88E8A7C2869B5BE001C96FB /* LocalNotificationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotificationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88E8A7F2869B5BE001C96FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E88E8A812869B5BE001C96FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				E85348D3286B105700D61695 /* NavigationBarTitleLabel.swift */,
 				E85348D7286B116C00D61695 /* SaveBarButtonItem copy.swift */,
 				E85348D9286B117C00D61695 /* CancelBarButtonItem.swift */,
+				E85348DB286B383000D61695 /* DatePicker.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				E85348D4286B105700D61695 /* NavigationBarTitleLabel.swift in Sources */,
 				E88E8A802869B5BE001C96FB /* AppDelegate.swift in Sources */,
 				E88E8A822869B5BE001C96FB /* SceneDelegate.swift in Sources */,
+				E85348DC286B383000D61695 /* DatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import SnapKit
 
 class AddNotificationViewController: UIViewController {
+    
+    private var datePicker = DatePicker.to()
     
     // MARK: - Initializers
     
@@ -30,11 +33,13 @@ class AddNotificationViewController: UIViewController {
         self.view.backgroundColor = .init(red: 0.1, green: 0.1, blue: 0.1, alpha: 1.0)
         initNavigationBar()
         
-        let datePicker: UIDatePicker = {
-            let datePicker = UIDatePicker()
-            
-            return datePicker
-        }()
+        
+        self.view.addSubview(datePicker)
+        
+        datePicker.snp.makeConstraints {
+            $0.centerX.width.equalToSuperview()
+            $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+        }
     }
     
     private func initNavigationBar() {
