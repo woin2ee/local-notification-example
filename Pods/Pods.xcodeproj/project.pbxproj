@@ -72,7 +72,7 @@
 		16FE0893CD246BEE47DCF8842BBF8B63 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationExample-LocalNotificationExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1749C675A0F16B7728F15629F6D21AC0 /* SFSafeSymbols.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFSafeSymbols.release.xcconfig; sourceTree = "<group>"; };
 		1D4C9BB24E9FC4CF2BDE840D52F7E109 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationExample-LocalNotificationExampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1E0CEF9C54D9539D3DA7D21F3F1A37E5 /* SFSafeSymbols */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SFSafeSymbols; path = SFSafeSymbols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E0CEF9C54D9539D3DA7D21F3F1A37E5 /* SFSafeSymbols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFSafeSymbols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2333E30225871BF7CE3E65D1858D7D22 /* Pods-LocalNotificationExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocalNotificationExample-dummy.m"; sourceTree = "<group>"; };
 		233ADB16B83019E6ACDAC2CC7A2A8747 /* Pods-LocalNotificationExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocalNotificationExample-umbrella.h"; sourceTree = "<group>"; };
 		2A4A365D64DF8B7D4813D4B33D55002E /* Pods-LocalNotificationExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationExample-Info.plist"; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		7D919DABBC3F38D16082A573CA941DC3 /* SFSymbol+AllSymbols+3.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+3.3.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+3.3.swift"; sourceTree = "<group>"; };
 		8AD28FF63B9E194525706209F4A73722 /* SFSymbol+AllSymbols+2.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+AllSymbols+2.1.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+AllSymbols+2.1.swift"; sourceTree = "<group>"; };
 		950B9D20DA584F4E33912505211B79DA /* Pods-LocalNotificationExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocalNotificationExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F6F29D8D09B76C6659A178CDA47341E /* SFSymbol+2.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFSymbol+2.1.swift"; path = "Sources/SFSafeSymbols/Symbols/SFSymbol+2.1.swift"; sourceTree = "<group>"; };
 		A75515615DC840D80B28059D3A2F7C42 /* SFSafeSymbols-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFSafeSymbols-umbrella.h"; sourceTree = "<group>"; };
 		A934B8013359EA08E2EA9E6EE8A61E80 /* UIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = Sources/SFSafeSymbols/Initializers/UIKit/UIImageExtension.swift; sourceTree = "<group>"; };
@@ -180,7 +180,7 @@
 			children = (
 				D58CFE37CFED6C2D53433BECCA5B4F18 /* Pods-LocalNotificationExample */,
 				AF39009900AC5C8C56DFEA9C79DC8A53 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests */,
-				1E0CEF9C54D9539D3DA7D21F3F1A37E5 /* SFSafeSymbols */,
+				1E0CEF9C54D9539D3DA7D21F3F1A37E5 /* SFSafeSymbols.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,7 +255,6 @@
 				A934B8013359EA08E2EA9E6EE8A61E80 /* UIImageExtension.swift */,
 				5B2FF05C9ED203897C068B9639F8ECB7 /* Support Files */,
 			);
-			name = SFSafeSymbols;
 			path = SFSafeSymbols;
 			sourceTree = "<group>";
 		};
@@ -337,7 +336,7 @@
 			);
 			name = SFSafeSymbols;
 			productName = SFSafeSymbols;
-			productReference = 1E0CEF9C54D9539D3DA7D21F3F1A37E5 /* SFSafeSymbols */;
+			productReference = 1E0CEF9C54D9539D3DA7D21F3F1A37E5 /* SFSafeSymbols.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		1C15E4681CE8307A793D45FCF0F98327 /* Pods-LocalNotificationExample-LocalNotificationExampleUITests */ = {
@@ -385,7 +384,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1330;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -593,7 +592,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SFSafeSymbols/SFSafeSymbols-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SFSafeSymbols/SFSafeSymbols-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -794,7 +793,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SFSafeSymbols/SFSafeSymbols-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SFSafeSymbols/SFSafeSymbols-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
