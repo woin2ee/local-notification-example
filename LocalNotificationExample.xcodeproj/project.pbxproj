@@ -10,6 +10,8 @@
 		09F3AA9EB09F488D1D6ABF6F /* Pods_LocalNotificationExample_LocalNotificationExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C1AF9899C039B9B2ADBD1D /* Pods_LocalNotificationExample_LocalNotificationExampleUITests.framework */; };
 		8450F8B9C98CCAD8AC701B97 /* Pods_LocalNotificationExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F13DDB4F0E8703BF7462560 /* Pods_LocalNotificationExample.framework */; };
 		E85348C8286AF8E500D61695 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85348C7286AF8E500D61695 /* AppNavigationController.swift */; };
+		E85348CA286AFFFA00D61695 /* AddNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85348C9286AFFFA00D61695 /* AddNotificationViewController.swift */; };
+		E85348D2286B08E200D61695 /* AddBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85348D1286B08E200D61695 /* AddBarButtonItem.swift */; };
 		E88E8A802869B5BE001C96FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E8A7F2869B5BE001C96FB /* AppDelegate.swift */; };
 		E88E8A822869B5BE001C96FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E8A812869B5BE001C96FB /* SceneDelegate.swift */; };
 		E88E8A842869B5BE001C96FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E8A832869B5BE001C96FB /* HomeViewController.swift */; };
@@ -37,6 +39,8 @@
 		44966AF7BEC2BEF7EF619297 /* Pods-LocalNotificationExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalNotificationExample.release.xcconfig"; path = "Target Support Files/Pods-LocalNotificationExample/Pods-LocalNotificationExample.release.xcconfig"; sourceTree = "<group>"; };
 		DE23D61B3B8ADD75A27CFC50 /* Pods-LocalNotificationExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalNotificationExample.debug.xcconfig"; path = "Target Support Files/Pods-LocalNotificationExample/Pods-LocalNotificationExample.debug.xcconfig"; sourceTree = "<group>"; };
 		E85348C7286AF8E500D61695 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		E85348C9286AFFFA00D61695 /* AddNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotificationViewController.swift; sourceTree = "<group>"; };
+		E85348D1286B08E200D61695 /* AddBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBarButtonItem.swift; sourceTree = "<group>"; };
 		E88E8A7C2869B5BE001C96FB /* LocalNotificationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotificationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88E8A7F2869B5BE001C96FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E88E8A812869B5BE001C96FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,47 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E85348CB286B07F700D61695 /* AddNotification */ = {
+			isa = PBXGroup;
+			children = (
+				E85348C9286AFFFA00D61695 /* AddNotificationViewController.swift */,
+				E85348D0286B081C00D61695 /* Component */,
+			);
+			path = AddNotification;
+			sourceTree = "<group>";
+		};
+		E85348CD286B07FB00D61695 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E88E8A832869B5BE001C96FB /* HomeViewController.swift */,
+				E85348CF286B081800D61695 /* Component */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E85348CE286B080100D61695 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E85348C7286AF8E500D61695 /* AppNavigationController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E85348CF286B081800D61695 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				E85348D1286B08E200D61695 /* AddBarButtonItem.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		E85348D0286B081C00D61695 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		E88E8A732869B5BE001C96FB = {
 			isa = PBXGroup;
 			children = (
@@ -122,8 +167,9 @@
 		E88E8A93286A04CD001C96FB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E85348C7286AF8E500D61695 /* AppNavigationController.swift */,
-				E88E8A832869B5BE001C96FB /* HomeViewController.swift */,
+				E85348CE286B080100D61695 /* Common */,
+				E85348CD286B07FB00D61695 /* Home */,
+				E85348CB286B07F700D61695 /* AddNotification */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -131,8 +177,8 @@
 		E88E8A94286A04E1001C96FB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E88E8A8D2869B5C0001C96FB /* Info.plist */,
 				E88E8A882869B5C0001C96FB /* Assets.xcassets */,
+				E88E8A8D2869B5C0001C96FB /* Info.plist */,
 				E88E8A8A2869B5C0001C96FB /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -342,6 +388,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E88E8A842869B5BE001C96FB /* HomeViewController.swift in Sources */,
+				E85348CA286AFFFA00D61695 /* AddNotificationViewController.swift in Sources */,
+				E85348D2286B08E200D61695 /* AddBarButtonItem.swift in Sources */,
 				E85348C8286AF8E500D61695 /* AppNavigationController.swift in Sources */,
 				E88E8A802869B5BE001C96FB /* AppDelegate.swift in Sources */,
 				E88E8A822869B5BE001C96FB /* SceneDelegate.swift in Sources */,
