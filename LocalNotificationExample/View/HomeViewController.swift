@@ -9,64 +9,82 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    private var notificationCenter: UNUserNotificationCenter?
+    private let notificationCenter: UNUserNotificationCenter
+    
+    // MARK: - Init
+    
+    init(notificationCenter: UNUserNotificationCenter) {
+        self.notificationCenter = notificationCenter
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.notificationCenter = UNUserNotificationCenter.current()
-        
-        requestNotificationAuthorization()
-        
         initView()
+        requestNotificationAuthorization()
     }
     
-    func initView() {
+    // MARK: - Private
+    
+    private func initView() {
         self.view.backgroundColor = .white
-        
         addButton()
     }
     
-    func addButton() {
-        let createNotificationButton = UIButton(type: .system)
-        createNotificationButton.setTitle("알림 등록", for: .normal)
-        createNotificationButton.addAction(
-            UIAction { _ in
-                self.addNotification()
-            },
-            for: .touchUpInside
-        )
+    private func addButton() {
+        let buttonConfig: UIButton.Configuration = {
+            var config = UIButton.Configuration.filled()
+            config.title = "알림 등록"
+            return config
+        }()
         
-        createNotificationButton.translatesAutoresizingMaskIntoConstraints = false
+        let createNotificationButton = UIButton(
+            configuration: buttonConfig,
+            primaryAction: UIAction { _ in
+                self.addNotification()
+            }
+        )
         
         self.view.addSubview(createNotificationButton)
         
+        createNotificationButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             createNotificationButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             createNotificationButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
         ])
     }
     
-    func addNotification() {
-        let content = UNMutableNotificationContent()
-        content.title = "Title"
-        content.subtitle = "subtitle"
-        content.body = "body"
-        content.sound = .default
-        content.badge = 1
+    private func addNotification() {
+        let notificationContent: UNMutableNotificationContent = {
+            let content = UNMutableNotificationContent()
+            content.title = "Title"
+            content.subtitle = "subtitle"
+            content.body = "body"
+            content.sound = .default
+            content.badge = 1
+            return content
+        }()
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-        
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        
-        notificationCenter?.add(request) { error in
+        let request = UNNotificationRequest(
+            identifier: UUID().uuidString,
+            content: notificationContent,
+            trigger: trigger
+        )
+        notificationCenter.add(request) { error in
             if let _ = error {
                 self.showDefaultAlert(title: "알림", message: "푸시 알림이 등록되지 않았습니다.")
             }
         }
     }
     
-    func showDefaultAlert(title: String, message: String) {
+    private func showDefaultAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "ok", style: .default)
@@ -77,10 +95,10 @@ class HomeViewController: UIViewController {
         }
     }
     
-    func requestNotificationAuthorization() {
+    private func requestNotificationAuthorization() {
         let authOptions: UNAuthorizationOptions = [.alert, .sound, .badge]
         
-        notificationCenter?.requestAuthorization(options: authOptions) { isAllowed, error in
+        notificationCenter.requestAuthorization(options: authOptions) { isAllowed, error in
             if let error = error {
                 return debugPrint(error.localizedDescription)
             }
