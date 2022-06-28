@@ -15,6 +15,8 @@ class HomeViewController: UIViewController {
         return .lightContent
     }
     
+    private var notificationTableViewController = NotificationTableViewController()
+    
     // MARK: - Initializers
     
     init(notificationCenter: UNUserNotificationCenter) {
@@ -38,6 +40,9 @@ class HomeViewController: UIViewController {
     private func initView() {
         self.view.backgroundColor = .black
         initNavigationBar()
+        setupTableView()
+        
+        
     }
     
     private func initNavigationBar() {
@@ -50,73 +55,80 @@ class HomeViewController: UIViewController {
         }
     }
     
-//    private func addButton() {
-//        let buttonConfig: UIButton.Configuration = {
-//            var config = UIButton.Configuration.filled()
-//            config.title = "알림 등록"
-//            return config
-//        }()
-//
-//        let createNotificationButton = UIButton(
-//            configuration: buttonConfig,
-//            primaryAction: UIAction { _ in
-//                self.addNotification()
-//            }
-//        )
-//
-//        self.view.addSubview(createNotificationButton)
-//
-//        createNotificationButton.translatesAutoresizingMaskIntoConstraints = false
-//        NSLayoutConstraint.activate([
-//            createNotificationButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-//            createNotificationButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
-//        ])
-//    }
+    private func setupTableView() {
+        self.view.addSubview(notificationTableViewController.tableView)
+        notificationTableViewController.tableView.snp.makeConstraints {
+            $0.top.bottom.left.right.equalTo(self.view.safeAreaLayoutGuide)
+        }
+    }
     
-//    private func addNotification() {
-//        let notificationContent: UNMutableNotificationContent = {
-//            let content = UNMutableNotificationContent()
-//            content.title = "Title"
-//            content.subtitle = "subtitle"
-//            content.body = "body"
-//            content.sound = .default
-//            content.badge = 1
-//            return content
-//        }()
-//
-//        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-//        let request = UNNotificationRequest(
-//            identifier: UUID().uuidString,
-//            content: notificationContent,
-//            trigger: trigger
-//        )
-//        notificationCenter.add(request) { error in
-//            if let _ = error {
-//                self.showDefaultAlert(title: "알림", message: "푸시 알림이 등록되지 않았습니다.")
-//            }
-//        }
-//    }
-//
-//    private func showDefaultAlert(title: String, message: String) {
-//        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-//
-//        let okAction = UIAlertAction(title: "ok", style: .default)
-//        alert.addAction(okAction)
-//
-//        DispatchQueue.main.async {
-//            self.present(alert, animated: true)
-//        }
-//    }
-//
-//    private func requestNotificationAuthorization() {
-//        let authOptions: UNAuthorizationOptions = [.alert, .sound, .badge]
-//
-//        notificationCenter.requestAuthorization(options: authOptions) { isAllowed, error in
-//            if let error = error {
-//                return debugPrint(error.localizedDescription)
-//            }
-//
-//            self.showDefaultAlert(title: "알림 허용 여부", message: isAllowed.description)
-//        }
-//    }
+    //    private func addButton() {
+    //        let buttonConfig: UIButton.Configuration = {
+    //            var config = UIButton.Configuration.filled()
+    //            config.title = "알림 등록"
+    //            return config
+    //        }()
+    //
+    //        let createNotificationButton = UIButton(
+    //            configuration: buttonConfig,
+    //            primaryAction: UIAction { _ in
+    //                self.addNotification()
+    //            }
+    //        )
+    //
+    //        self.view.addSubview(createNotificationButton)
+    //
+    //        createNotificationButton.translatesAutoresizingMaskIntoConstraints = false
+    //        NSLayoutConstraint.activate([
+    //            createNotificationButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+    //            createNotificationButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
+    //        ])
+    //    }
+    
+    //    private func addNotification() {
+    //        let notificationContent: UNMutableNotificationContent = {
+    //            let content = UNMutableNotificationContent()
+    //            content.title = "Title"
+    //            content.subtitle = "subtitle"
+    //            content.body = "body"
+    //            content.sound = .default
+    //            content.badge = 1
+    //            return content
+    //        }()
+    //
+    //        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+    //        let request = UNNotificationRequest(
+    //            identifier: UUID().uuidString,
+    //            content: notificationContent,
+    //            trigger: trigger
+    //        )
+    //        notificationCenter.add(request) { error in
+    //            if let _ = error {
+    //                self.showDefaultAlert(title: "알림", message: "푸시 알림이 등록되지 않았습니다.")
+    //            }
+    //        }
+    //    }
+    //
+    //    private func showDefaultAlert(title: String, message: String) {
+    //        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    //
+    //        let okAction = UIAlertAction(title: "ok", style: .default)
+    //        alert.addAction(okAction)
+    //
+    //        DispatchQueue.main.async {
+    //            self.present(alert, animated: true)
+    //        }
+    //    }
+    //
+    //    private func requestNotificationAuthorization() {
+    //        let authOptions: UNAuthorizationOptions = [.alert, .sound, .badge]
+    //
+    //        notificationCenter.requestAuthorization(options: authOptions) { isAllowed, error in
+    //            if let error = error {
+    //                return debugPrint(error.localizedDescription)
+    //            }
+    //
+    //            self.showDefaultAlert(title: "알림 허용 여부", message: isAllowed.description)
+    //        }
+    //    }
 }

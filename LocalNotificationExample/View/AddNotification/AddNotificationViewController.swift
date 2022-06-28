@@ -40,6 +40,7 @@ class AddNotificationViewController: UIViewController {
             $0.centerX.width.equalToSuperview()
             $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
         }
+        
     }
     
     private func initNavigationBar() {
@@ -53,7 +54,7 @@ class AddNotificationViewController: UIViewController {
     
     private func setupBarButton() {
         self.navigationItem.rightBarButtonItem = SaveBarButtonItem.to { _ in
-            print("Save")
+            
         }
         
         self.navigationItem.leftBarButtonItem = CancelBarButtonItem.to { _ in
