@@ -1,0 +1,16 @@
+PODS:
+  - SFSafeSymbols (3.3.2)
+
+DEPENDENCIES:
+  - SFSafeSymbols (>= 3.0)
+
+SPEC REPOS:
+  trunk:
+    - SFSafeSymbols
+
+SPEC CHECKSUMS:
+  SFSafeSymbols: d06fdfe6e89b98f5cecfd9b0b59bd31f35981373
+
+PODFILE CHECKSUM: fb11ac89a058dc79c566bf16ba8565e203c4bcf6
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_LocalNotificationExample_LocalNotificationExampleUITests : NSObject
+@end
+@implementation PodsDummy_Pods_LocalNotificationExample_LocalNotificationExampleUITests
+@end
