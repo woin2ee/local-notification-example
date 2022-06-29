@@ -14,6 +14,16 @@ protocol NotificationTableViewDelegate: AnyObject {
 
 class AddNotificationViewController: UIViewController {
     
+    private let notificationCenter: UNUserNotificationCenter
+    
+    private weak var notificationTableViewDelegate: NotificationTableViewDelegate?
+    
+    private let calendar: Calendar = {
+        var calendar = Calendar.current
+        calendar.timeZone = .init(abbreviation: "KST") ?? TimeZone.autoupdatingCurrent
+        return calendar
+    }()
+    
     private let datePicker: UIDatePicker = {
         let datePicker = UIDatePicker()
         datePicker.date = Date()
@@ -42,19 +52,15 @@ class AddNotificationViewController: UIViewController {
         return button
     }()
     
-    private let calendar: Calendar = {
-        var calendar = Calendar.current
-        calendar.timeZone = .init(abbreviation: "KST") ?? TimeZone.autoupdatingCurrent
-        return calendar
-    }()
-    
-    private weak var notificationTableViewDelegate: NotificationTableViewDelegate?
-    
     // MARK: - Initializers
     
-    init(notificationTableViewDelegate: NotificationTableViewDelegate) {
-        super.init(nibName: nil, bundle: nil)
+    init(
+        notificationCenter: UNUserNotificationCenter,
+        notificationTableViewDelegate: NotificationTableViewDelegate
+    ) {
+        self.notificationCenter = notificationCenter
         self.notificationTableViewDelegate = notificationTableViewDelegate
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -66,6 +72,7 @@ class AddNotificationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
+        requestNotificationAuthorization()
     }
     
     // MARK: - Private
@@ -78,19 +85,23 @@ class AddNotificationViewController: UIViewController {
     
     private func initNavigationBar() {
         setupTitle()
-        setupBarButton()
+        setupRightBarButton()
+        setupLeftBarButton()
     }
     private func setupTitle() {
         self.navigationController?.navigationBar.topItem?.titleView = titleLabel
     }
-    private func setupBarButton() {
+    private func setupRightBarButton() {
         saveButton.primaryAction = UIAction { _ in
             let dateComponents = self.calendar.dateComponents([.hour, .minute], from: self.datePicker.date)
             self.notificationTableViewDelegate?.append(dateComponents)
             self.dismiss(animated: true)
+            
+            self.addNotification(time: dateComponents)
         }
         self.navigationItem.rightBarButtonItem = saveButton
-        
+    }
+    private func setupLeftBarButton() {
         cancelButton.primaryAction = UIAction { _ in
             self.dismiss(animated: true)
         }
@@ -102,6 +113,50 @@ class AddNotificationViewController: UIViewController {
         datePicker.snp.makeConstraints {
             $0.centerX.width.equalToSuperview()
             $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+        }
+    }
+    
+    private func addNotification(time: DateComponents) {
+        let notificationContent: UNMutableNotificationContent = {
+            let content = UNMutableNotificationContent()
+            content.title = "알림"
+            content.subtitle = "정해진 시간이 됐습니다."
+            content.body = ""
+            content.sound = .default
+            content.badge = 0
+            return content
+        }()
+        
+        let trigger = UNCalendarNotificationTrigger.init(dateMatching: time, repeats: true)
+        let request = UNNotificationRequest(
+            identifier: UUID().uuidString,
+            content: notificationContent,
+            trigger: trigger
+        )
+        notificationCenter.add(request) { error in
+            if let _ = error {
+                self.showDefaultAlert(title: "알림", message: "푸시 알림이 등록되지 않았습니다.")
+            }
+        }
+    }
+    
+    private func showDefaultAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "ok", style: .default)
+        alert.addAction(okAction)
+        
+        DispatchQueue.main.async {
+            self.present(alert, animated: true)
+        }
+    }
+    
+    private func requestNotificationAuthorization() {
+        let authOptions: UNAuthorizationOptions = [.alert, .sound, .badge]
+        notificationCenter.requestAuthorization(options: authOptions) { isAllowed, error in
+            if let error = error {
+                return debugPrint(error.localizedDescription)
+            }
         }
     }
 }
