@@ -62,7 +62,7 @@ class HomeViewController: UIViewController {
     }
     private func setupBarButton() {
         addButton.primaryAction = UIAction { _ in
-            self.present(UINavigationController(rootViewController: AddNotificationViewController()), animated: true)
+            self.present(UINavigationController(rootViewController: AddNotificationViewController(notificationTableViewDelegate: self.notificationTableViewController)), animated: true)
         }
         self.navigationItem.rightBarButtonItem = addButton
     }

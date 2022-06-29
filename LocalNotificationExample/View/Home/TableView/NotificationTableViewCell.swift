@@ -13,7 +13,7 @@ class NotificationTableViewCell: UITableViewCell {
     var dateLabel: UILabel = {
         let lbl = UILabel()
         lbl.textColor = .white
-        lbl.font = .systemFont(ofSize: 22)
+        lbl.font = .systemFont(ofSize: 60, weight: .thin)
         return lbl
     }()
     
@@ -38,7 +38,9 @@ class NotificationTableViewCell: UITableViewCell {
     private func placeDateLabelOnCell() {
         self.contentView.addSubview(dateLabel)
         dateLabel.snp.makeConstraints {
-            $0.left.equalTo(self.contentView)
+            $0.top.equalTo(self.contentView).offset(10)
+            $0.bottom.equalTo(self.contentView).offset(-10)
+            $0.left.equalTo(self.contentView).offset(2)
         }
     }
 }

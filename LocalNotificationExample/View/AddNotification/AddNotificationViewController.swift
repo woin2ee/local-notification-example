@@ -8,14 +8,19 @@
 import UIKit
 import SnapKit
 
+protocol NotificationTableViewDelegate: AnyObject {
+    func append(_ date: DateComponents)
+}
+
 class AddNotificationViewController: UIViewController {
     
     private let datePicker: UIDatePicker = {
         let datePicker = UIDatePicker()
+        datePicker.date = Date()
         datePicker.datePickerMode = .time
         datePicker.preferredDatePickerStyle = .wheels
-        datePicker.timeZone = .autoupdatingCurrent
-        datePicker.locale = .autoupdatingCurrent
+        datePicker.timeZone = .init(abbreviation: "KST")
+        datePicker.locale = .init(identifier: "ko_KR")
         datePicker.setValue(UIColor.white, forKey: "textColor")
         return datePicker
     }()
@@ -37,10 +42,19 @@ class AddNotificationViewController: UIViewController {
         return button
     }()
     
+    private let calendar: Calendar = {
+        var calendar = Calendar.current
+        calendar.timeZone = .init(abbreviation: "KST") ?? TimeZone.autoupdatingCurrent
+        return calendar
+    }()
+    
+    private weak var notificationTableViewDelegate: NotificationTableViewDelegate?
+    
     // MARK: - Initializers
     
-    init() {
+    init(notificationTableViewDelegate: NotificationTableViewDelegate) {
         super.init(nibName: nil, bundle: nil)
+        self.notificationTableViewDelegate = notificationTableViewDelegate
     }
     
     required init?(coder: NSCoder) {
@@ -71,7 +85,9 @@ class AddNotificationViewController: UIViewController {
     }
     private func setupBarButton() {
         saveButton.primaryAction = UIAction { _ in
-            print(self.datePicker.date)
+            let dateComponents = self.calendar.dateComponents([.hour, .minute], from: self.datePicker.date)
+            self.notificationTableViewDelegate?.append(dateComponents)
+            self.dismiss(animated: true)
         }
         self.navigationItem.rightBarButtonItem = saveButton
         
