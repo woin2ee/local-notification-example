@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 protocol NotificationTableViewDelegate: AnyObject {
-    func append(_ date: DateComponents)
+    func save(id: UUID?, date: DateComponents)
 }
 
 class AddNotificationViewController: UIViewController {
@@ -23,6 +23,8 @@ class AddNotificationViewController: UIViewController {
         calendar.timeZone = .init(abbreviation: "KST") ?? TimeZone.autoupdatingCurrent
         return calendar
     }()
+    
+    private let id: UUID?
     
     private let datePicker: UIDatePicker = {
         let datePicker = UIDatePicker()
@@ -55,9 +57,13 @@ class AddNotificationViewController: UIViewController {
     // MARK: - Initializers
     
     init(
-        notificationCenter: UNUserNotificationCenter,
+        id: UUID? = nil,
+        date: Date = Date(),
+        notificationCenter: UNUserNotificationCenter = UNUserNotificationCenter.current(),
         notificationTableViewDelegate: NotificationTableViewDelegate
     ) {
+        self.id = id
+        self.datePicker.setDate(date, animated: false)
         self.notificationCenter = notificationCenter
         self.notificationTableViewDelegate = notificationTableViewDelegate
         super.init(nibName: nil, bundle: nil)
@@ -94,7 +100,7 @@ class AddNotificationViewController: UIViewController {
     private func setupRightBarButton() {
         saveButton.primaryAction = UIAction { _ in
             let dateComponents = self.calendar.dateComponents([.hour, .minute], from: self.datePicker.date)
-            self.notificationTableViewDelegate?.append(dateComponents)
+            self.notificationTableViewDelegate?.save(id: self.id, date: dateComponents)
             self.dismiss(animated: true)
             
             self.addNotification(time: dateComponents)

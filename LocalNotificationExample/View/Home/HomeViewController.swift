@@ -43,6 +43,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
+        notificationTableViewController.bind(homeDelegate: self)
     }
     
     // MARK: - Private
@@ -59,12 +60,10 @@ class HomeViewController: UIViewController {
     }
     private func setupBarButton() {
         addButton.primaryAction = UIAction { _ in
-            self.present(UINavigationController(
-                rootViewController: AddNotificationViewController(
-                    notificationCenter: UNUserNotificationCenter.current(),
-                    notificationTableViewDelegate: self.notificationTableViewController
-                )
-            ), animated: true)
+            self.present(
+                UINavigationController(rootViewController: AddNotificationViewController(notificationTableViewDelegate: self.notificationTableViewController)),
+                animated: true
+            )
         }
         self.navigationItem.rightBarButtonItem = addButton
     }
@@ -82,5 +81,14 @@ class HomeViewController: UIViewController {
             $0.top.equalTo(headerLabel.snp.bottom).offset(20)
             $0.bottom.left.right.equalTo(self.view.safeAreaLayoutGuide).offset(10)
         }
+    }
+}
+
+// MARK: - HomeDelegate
+
+extension HomeViewController: HomeDelegate {
+    
+    func presentToHome(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
+        self.present(viewControllerToPresent, animated: flag)
     }
 }

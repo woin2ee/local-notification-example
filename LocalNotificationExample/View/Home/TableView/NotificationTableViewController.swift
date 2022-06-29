@@ -7,15 +7,30 @@
 
 import UIKit
 
+protocol HomeDelegate: AnyObject {
+    func presentToHome(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)?)
+}
+
+struct CellDTO {
+    let id: UUID
+    var date: DateComponents
+}
+
 class NotificationTableViewController: UITableViewController {
     
-    private var notificationList: [DateComponents] = []
+    private var notificationList: [CellDTO] = []
+    
+    private weak var homeDelegate: HomeDelegate?
     
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initTableView()
+    }
+    
+    func bind(homeDelegate: HomeDelegate) {
+        self.homeDelegate = homeDelegate
     }
     
     // MARK: - Private
@@ -41,8 +56,8 @@ extension NotificationTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationCell") as! NotificationTableViewCell
         
-        let hour = notificationList[indexPath.row].hour ?? 0
-        let minute = notificationList[indexPath.row].minute ?? 0
+        let hour = notificationList[indexPath.row].date.hour ?? 0
+        let minute = notificationList[indexPath.row].date.minute ?? 0
         
         let hourString = hour < 10 ? "0\(hour)" : "\(hour)"
         let minuteString = minute < 10 ? "0\(minute)" : "\(minute)"
@@ -51,12 +66,37 @@ extension NotificationTableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.homeDelegate?.presentToHome(
+            UINavigationController(rootViewController: AddNotificationViewController(
+                id: self.notificationList[indexPath.row].id,
+                date: Date.to(notificationList[indexPath.row].date) ?? Date(),
+                notificationTableViewDelegate: self
+            )),
+            animated: true,
+            completion: nil
+        )
+    }
 }
+
+// MARK: - NotificationTableViewDelegate
 
 extension NotificationTableViewController: NotificationTableViewDelegate {
     
-    func append(_ date: DateComponents) {
-        self.notificationList.append(date)
+    func save(id: UUID?, date: DateComponents) {
+        if id == nil {
+            self.notificationList.append(CellDTO(id: UUID(), date: date))
+        } else {
+            guard let id = id else { return }
+
+            self.notificationList.removeAll(where: { $0.id == id })
+            self.notificationList.append(CellDTO(id: id, date: date))
+        }
         self.tableView.reloadData()
     }
 }

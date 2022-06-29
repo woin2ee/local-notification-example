@@ -38,6 +38,16 @@
                ReferencedContainer = "container:LocalNotificationExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E809306A286C842C00877C24"
+               BuildableName = "LocalNotificationExampleTests.xctest"
+               BlueprintName = "LocalNotificationExampleTests"
+               ReferencedContainer = "container:LocalNotificationExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
