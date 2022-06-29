@@ -15,7 +15,13 @@ class HomeViewController: UIViewController {
         return .lightContent
     }
     
-    private var notificationTableViewController = NotificationTableViewController()
+    private let addButton: UIBarButtonItem = {
+        let button = UIBarButtonItem(systemItem: .add)
+        button.tintColor = .orange
+        return button
+    }()
+    
+    private let notificationTableViewController = NotificationTableViewController()
     
     // MARK: - Initializers
     
@@ -40,27 +46,27 @@ class HomeViewController: UIViewController {
     private func initView() {
         self.view.backgroundColor = .black
         initNavigationBar()
-        setupTableView()
-        
-        
+        placeTableViewOnRootView()
     }
     
     private func initNavigationBar() {
         setupBarButton()
     }
-    
     private func setupBarButton() {
-        self.navigationItem.rightBarButtonItem = AddBarButtonItem.to { _ in
+        addButton.primaryAction = UIAction { _ in
             self.present(UINavigationController(rootViewController: AddNotificationViewController()), animated: true)
         }
+        self.navigationItem.rightBarButtonItem = addButton
     }
     
-    private func setupTableView() {
+    private func placeTableViewOnRootView() {
         self.view.addSubview(notificationTableViewController.tableView)
         notificationTableViewController.tableView.snp.makeConstraints {
             $0.top.bottom.left.right.equalTo(self.view.safeAreaLayoutGuide)
         }
     }
+    
+    
     
     //    private func addButton() {
     //        let buttonConfig: UIButton.Configuration = {

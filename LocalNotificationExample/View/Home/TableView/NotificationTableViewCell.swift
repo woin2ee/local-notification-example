@@ -15,27 +15,29 @@ class NotificationTableViewCell: UITableViewCell {
         lbl.textColor = .white
         return lbl
     }()
-
+    
+    // MARK: - Initializers
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.contentView.backgroundColor = .black
-        
-        self.contentView.addSubview(dateLabel)
-        
-        setConstraints()
+        initCell()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setConstraints() {
+    // MARK: - Private
+    
+    private func initCell() {
+        self.contentView.backgroundColor = .black
+        placeDateLabelOnCell()
+    }
+    
+    private func placeDateLabelOnCell() {
+        self.contentView.addSubview(dateLabel)
         dateLabel.snp.makeConstraints {
             $0.left.equalTo(self.contentView)
         }
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
     }
 }

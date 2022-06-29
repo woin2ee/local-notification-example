@@ -11,21 +11,31 @@ class NotificationTableViewController: UITableViewController {
     
     var notificationList: [Date] = [Date(), Date()]
     
+    // MARK: - Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundColor = .black
-        
-        tableView.register(NotificationTableViewCell.self, forCellReuseIdentifier: "notificationCell")
+        initTableView()
     }
     
-    // MARK: - Table view data source
+    // MARK: - Private
+    
+    private func initTableView() {
+        tableView.backgroundColor = .black
+        tableView.register(NotificationTableViewCell.self, forCellReuseIdentifier: "NotificationCell")
+    }
+}
+
+// MARK: - UITableViewDelegate & UITableViewDataSource
+
+extension NotificationTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return notificationList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "notificationCell") as! NotificationTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationCell") as! NotificationTableViewCell
         
         cell.dateLabel.text = notificationList[indexPath.row].description
         
