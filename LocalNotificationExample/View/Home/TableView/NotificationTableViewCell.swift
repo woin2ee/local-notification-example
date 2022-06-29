@@ -13,6 +13,7 @@ class NotificationTableViewCell: UITableViewCell {
     var dateLabel: UILabel = {
         let lbl = UILabel()
         lbl.textColor = .white
+        lbl.font = .systemFont(ofSize: 22)
         return lbl
     }()
     

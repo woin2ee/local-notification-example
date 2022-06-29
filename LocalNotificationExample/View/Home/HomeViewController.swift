@@ -20,6 +20,13 @@ class HomeViewController: UIViewController {
         button.tintColor = .orange
         return button
     }()
+    private let headerLabel: UILabel = {
+        let label = UILabel()
+        label.text = "알림"
+        label.textColor = .white
+        label.font = .boldSystemFont(ofSize: 32)
+        return label
+    }()
     
     private let notificationTableViewController = NotificationTableViewController()
     
@@ -46,6 +53,7 @@ class HomeViewController: UIViewController {
     private func initView() {
         self.view.backgroundColor = .black
         initNavigationBar()
+        placeHeaderLabelOnRootView()
         placeTableViewOnRootView()
     }
     
@@ -59,10 +67,18 @@ class HomeViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = addButton
     }
     
+    private func placeHeaderLabelOnRootView() {
+        self.view.addSubview(headerLabel)
+        headerLabel.snp.makeConstraints {
+            $0.top.equalTo(self.view.safeAreaLayoutGuide).offset(10)
+            $0.leading.equalToSuperview().offset(10)
+        }
+    }
     private func placeTableViewOnRootView() {
         self.view.addSubview(notificationTableViewController.tableView)
         notificationTableViewController.tableView.snp.makeConstraints {
-            $0.top.bottom.left.right.equalTo(self.view.safeAreaLayoutGuide)
+            $0.top.equalTo(headerLabel.snp.bottom).offset(20)
+            $0.bottom.left.right.equalTo(self.view.safeAreaLayoutGuide).offset(10)
         }
     }
     
