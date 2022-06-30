@@ -9,6 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    private let notificationTableViewController = NotificationTableViewController()
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -18,6 +20,7 @@ class HomeViewController: UIViewController {
         button.tintColor = .orange
         return button
     }()
+    
     private let headerLabel: UILabel = {
         let label = UILabel()
         label.text = "알림"
@@ -25,8 +28,6 @@ class HomeViewController: UIViewController {
         label.font = .boldSystemFont(ofSize: 32)
         return label
     }()
-    
-    private let notificationTableViewController = NotificationTableViewController()
     
     // MARK: - Initializers
     
@@ -45,8 +46,11 @@ class HomeViewController: UIViewController {
         initView()
         notificationTableViewController.bind(homeDelegate: self)
     }
-    
-    // MARK: - Private
+}
+
+// MARK: - Private
+
+private extension HomeViewController {
     
     private func initView() {
         self.view.backgroundColor = .black
@@ -58,6 +62,7 @@ class HomeViewController: UIViewController {
     private func initNavigationBar() {
         setupBarButton()
     }
+    
     private func setupBarButton() {
         addButton.primaryAction = UIAction { _ in
             self.present(
@@ -75,6 +80,7 @@ class HomeViewController: UIViewController {
             $0.leading.equalToSuperview().offset(10)
         }
     }
+    
     private func placeTableViewOnRootView() {
         self.view.addSubview(notificationTableViewController.tableView)
         notificationTableViewController.tableView.snp.makeConstraints {
